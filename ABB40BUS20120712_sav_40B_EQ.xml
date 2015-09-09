@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2012/CIM-schema-cim16#" xmlns:abb="http://abb.com/schema/cim_extensions/2010#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#">
+<md:FullModel rdf:about="#_99D64D6BF313415992DC592651904E0D">
+<md:Model.created>2012-07-11</md:Model.created>
+<md:Model.scenarioTime>2012-07-12</md:Model.scenarioTime>
+<md:Model.description>CC_USER</md:Model.description>
+<md:Model.modelingAuthoritySet>40-bus Boundary</md:Model.modelingAuthoritySet>
+<md:Model.profile>http://iec.ch/TC57/61970-452/Equipment/2</md:Model.profile>
+<md:Model.version>188</md:Model.version>
+</md:FullModel>
+<cim:BaseVoltage rdf:ID="_1828B84BEF964FE6BE6E8031F192D183">
+<cim:IdentifiedObject.name>BVL_0.4KV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>.4</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_4082EAFBE3394DF4ADA427EE1C911A24">
+<cim:IdentifiedObject.name>BVL_10kV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>10</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_EADC4D48AB884B639442E57436903E4F">
+<cim:IdentifiedObject.name>BVL_110KV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>110</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_FAE48A9A74044BF0AA744E0ADC1391FC">
+<cim:IdentifiedObject.name>BVL_115KV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>115</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_8365BABCFF294980B62C62C9A4A1B678">
+<cim:IdentifiedObject.name>BVL_12KV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>12</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_598DF57D28124C269E5F564DD4DB3269">
+<cim:IdentifiedObject.name>BVL_13KV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>13</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_4ACA86931AB646D397F3CAD61FF1A684">
+<cim:IdentifiedObject.name>BVL_15kV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>15</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_8B09C1FA447A4A0BBACAB1596F1CDAD1">
+<cim:IdentifiedObject.name>BVL_16kV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>16</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_1AC9AF6924884191806C50238E0B0208">
+<cim:IdentifiedObject.name>BVL_220kV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>220</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_F9191DBEE577418FA8C59170A18BD573">
+<cim:IdentifiedObject.name>BVL_380KV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>380</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_F98723206D8843D19B511A5B40E2EC87">
+<cim:IdentifiedObject.name>BVL_400kV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>400</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_DC2EF38E4415460EBD3FC76796645AA1">
+<cim:IdentifiedObject.name>BVL_40KV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>40</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:BaseVoltage rdf:ID="_8CB89FA161F04F99B2C5348177107C7D">
+<cim:IdentifiedObject.name>BVL_60KV</cim:IdentifiedObject.name>
+<cim:BaseVoltage.nominalVoltage>60</cim:BaseVoltage.nominalVoltage>
+</cim:BaseVoltage>
+<cim:Breaker rdf:ID="_04A87DB18F97431AA86B5A8D3AF3B9EB">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>AMHEGRAN  400  SITCH 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRAN400SW2</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_E0EDEFB17D3C4DBE80F8A31158AF6187"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_464706600830479E93049158B6904651">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>AMHEGRAN  400  SWITCH 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRAN400SW1</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_E0EDEFB17D3C4DBE80F8A31158AF6187"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_9C8169F94008454A99A2323626B38BC5">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>MARCLANS  400  SWITCH 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANS400SW2</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_183CFED2D99445C0A6A52EE1B4299362"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_508526D1AC424D5B843FEE6303DDDE81">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>MARCLANS  400  SWITCH1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANS400SW1</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_183CFED2D99445C0A6A52EE1B4299362"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_753780892ECA48E5B6488CC99625E6FE">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>TROY4BLO  SUB  SWITCH 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOSUBSW2</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_6D6A626A777B466B952E9665377FF379"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_20184BF811274D589DAD1B6FDEBED27B">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>TROY4BLO  SUB  SWITCH 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOSUBSW1</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_6D6A626A777B466B952E9665377FF379"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_E14CF50FDE004642BF45FB5B32DCAD76">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>JUNEBLOO  220  SWITCH 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOO220SW2</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_205469BDF1F44BF5A1DD210AAC2CFCF4"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_1AC9AF6924884191806C50238E0B0208"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_890D5F15255B4071B93CCC557F5BE14B">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>JUNEBLOO  220  SWITCH 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOO220SW1</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_205469BDF1F44BF5A1DD210AAC2CFCF4"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_1AC9AF6924884191806C50238E0B0208"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_ADAB11BD586444CAA9C6F74BC1BDA0E8">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>TROY2BLO  220  SWITCH 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO220SW2</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_C11BD7B3383C4616A41913CF113916BC"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_1AC9AF6924884191806C50238E0B0208"/>
+</cim:Breaker>
+<cim:Breaker rdf:ID="_8E23AA9201BF445B892BB2C93F42210E">
+<cim:Switch.ratedCurrent>0</cim:Switch.ratedCurrent>
+<cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+<cim:IdentifiedObject.name>TROY2BLO  220  SWITCH 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO220SW1</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_C11BD7B3383C4616A41913CF113916BC"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_1AC9AF6924884191806C50238E0B0208"/>
+</cim:Breaker>
+<cim:BusbarSection rdf:ID="_FD3E263F65A0482AB2E071BB86AF2EFA">
+<cim:IdentifiedObject.name>AMHEGRAN  400  BUS1   Bus seg.</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRAN400BUS1   BB_SEG</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_E0EDEFB17D3C4DBE80F8A31158AF6187"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:BusbarSection>
+<cim:BusbarSection rdf:ID="_E70CC456D75D4A7D9C52FA88474509AC">
+<cim:IdentifiedObject.name>JUNEBLOO  220  BUS1   Bus seg.</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOO220BUS1   BB_SEG</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_205469BDF1F44BF5A1DD210AAC2CFCF4"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_1AC9AF6924884191806C50238E0B0208"/>
+</cim:BusbarSection>
+<cim:BusbarSection rdf:ID="_B6F2C960E9BD42DC92359AD316E36F86">
+<cim:IdentifiedObject.name>MARCLANS  400  BUS1   Bus seg.</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANS400BUS1   BB_SEG</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_183CFED2D99445C0A6A52EE1B4299362"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:BusbarSection>
+<cim:BusbarSection rdf:ID="_9786EBA6A5D54BBB8A107B867E32898A">
+<cim:IdentifiedObject.name>TROY2BLO  220  BUS1   Bus seg.</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO220BUS1   BB_SEG</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_C11BD7B3383C4616A41913CF113916BC"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_1AC9AF6924884191806C50238E0B0208"/>
+</cim:BusbarSection>
+<cim:BusbarSection rdf:ID="_1D1E5C4E625248B9BFBAAA9C0BE29693">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  BUS1   Bus seg.</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOSUBBUS1   BB_SEG</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_6D6A626A777B466B952E9665377FF379"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:BusbarSection>
+<cim:ConnectivityNode rdf:ID="_4AE61330DE86427DA77FBE7DC682B9D5">
+<cim:IdentifiedObject.name>AMHEGRANXNODE_101991</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_E0EDEFB17D3C4DBE80F8A31158AF6187"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_E90D77379CB2420786494B4FA608F95D">
+<cim:IdentifiedObject.name>AMHEGRANXNODE_101988</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_E0EDEFB17D3C4DBE80F8A31158AF6187"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_F4BEB2B2C22544F79154AEF128A3F67E">
+<cim:IdentifiedObject.name>JUNEBLOOXNODE_102309</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_205469BDF1F44BF5A1DD210AAC2CFCF4"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_449305C79C224849ADFD7ACC06224FCE">
+<cim:IdentifiedObject.name>JUNEBLOOXNODE_102303</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_205469BDF1F44BF5A1DD210AAC2CFCF4"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_E58337C995564FBEBE936AA5183D457F">
+<cim:IdentifiedObject.name>MARCLANSXNODE_102255</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_183CFED2D99445C0A6A52EE1B4299362"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_B6A670604AFC4CFF955D0A2CC981EE1C">
+<cim:IdentifiedObject.name>MARCLANSXNODE_102249</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_183CFED2D99445C0A6A52EE1B4299362"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_AB94E69FEDBC43ED8E9D06F1A50D0713">
+<cim:IdentifiedObject.name>TROY2BLO_102286</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_C11BD7B3383C4616A41913CF113916BC"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_1A5AA3CDE10748EC84AF6ACAC0E02811">
+<cim:IdentifiedObject.name>TROY2BLO_102277</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_C11BD7B3383C4616A41913CF113916BC"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_52958727BB8442B99551396A12C2D4A4">
+<cim:IdentifiedObject.name>TROY4BLO_102298</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_6D6A626A777B466B952E9665377FF379"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_914D02D240C14E5EA4D3B9E96D7911AC">
+<cim:IdentifiedObject.name>TROY4BLO_102290</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_6D6A626A777B466B952E9665377FF379"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_6F0DBA6B7E954DB3BEB036BF1E50B128">
+<cim:IdentifiedObject.name>AMHEGRANXNODE_102002</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_E0EDEFB17D3C4DBE80F8A31158AF6187"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_2D7891E532614B31AE4837517B8CDED4">
+<cim:IdentifiedObject.name>JUNEBLOOXNODE_101873</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_205469BDF1F44BF5A1DD210AAC2CFCF4"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_4B803A52E55147539795741752033819">
+<cim:IdentifiedObject.name>MARCLANSXNODE_101944</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_183CFED2D99445C0A6A52EE1B4299362"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_174B980A1F5044F2BFAC90AA7D2E3494">
+<cim:IdentifiedObject.name>TROY2BLO_102039</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_C11BD7B3383C4616A41913CF113916BC"/>
+</cim:ConnectivityNode>
+<cim:ConnectivityNode rdf:ID="_A6881D185C7F47209BFEFE035CFE0E2E">
+<cim:IdentifiedObject.name>TROY4BLO_102079</cim:IdentifiedObject.name>
+<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_6D6A626A777B466B952E9665377FF379"/>
+</cim:ConnectivityNode>
+<cim:DayType rdf:ID="_DF4FD9E0B30E4C56B5167CF63EE6F1B3">
+<cim:IdentifiedObject.name>Saturday</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>DAYTYPESATURDAY</cim:IdentifiedObject.aliasName>
+</cim:DayType>
+<cim:DayType rdf:ID="_51F88941DC444134A0407F02FE7FDBB8">
+<cim:IdentifiedObject.name>Sunday</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>DAYTYPESUNDAY</cim:IdentifiedObject.aliasName>
+</cim:DayType>
+<cim:DayType rdf:ID="_03B498109DF9434EB7316C0109EF3E14">
+<cim:IdentifiedObject.name>Weekday</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>DAYTYPEWEEKDAY</cim:IdentifiedObject.aliasName>
+</cim:DayType>
+<cim:Discrete rdf:ID="_D72F60CB75C74E1A9EC89F9F11D04AA6">
+<cim:IdentifiedObject.name>MARCLANS400BR1_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANS400BR1_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>0</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_508526D1AC424D5B843FEE6303DDDE81"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_1EB02277EB09439EB5053F39779B8142">
+<cim:IdentifiedObject.name>JUNEBLOO220BR2_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOO220BR2_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>1</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_E14CF50FDE004642BF45FB5B32DCAD76"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_042412844B9945038DAA74CCB178E48F">
+<cim:IdentifiedObject.name>JUNEBLOO220BR1_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOO220BR1_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>0</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_890D5F15255B4071B93CCC557F5BE14B"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_5E7E07AE6D4449B5AA6E554591200DB4">
+<cim:IdentifiedObject.name>MARCLANS400BR2_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANS400BR2_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>1</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_9C8169F94008454A99A2323626B38BC5"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_AFD373D8623849208DCE99CF7476BFF8">
+<cim:IdentifiedObject.name>TROY2BLO220BR2_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO220BR2_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>1</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_ADAB11BD586444CAA9C6F74BC1BDA0E8"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_824913794A464AC981BC22B84738262B">
+<cim:IdentifiedObject.name>TROY2BLO220BREAKER1_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO220BR1_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>0</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_8E23AA9201BF445B892BB2C93F42210E"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_E10658CC69F742CA8BE58E7E679D4B89">
+<cim:IdentifiedObject.name>AMHEGRAN400BREAKER2_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRAN400BR2_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>1</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_04A87DB18F97431AA86B5A8D3AF3B9EB"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_224941E1491B4D3ABB9A99438E727B5B">
+<cim:IdentifiedObject.name>AMHEGRAN400BREAKER1_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRAN400BR1_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>0</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_464706600830479E93049158B6904651"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_B9F1C725CEB7499C8CB7695E68E793BC">
+<cim:IdentifiedObject.name>TROY4BLOSUBBREAKER2_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOSUBBREAKER2_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>1</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_753780892ECA48E5B6488CC99625E6FE"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:Discrete rdf:ID="_A526AA14589D46859D5587AA6223003B">
+<cim:IdentifiedObject.name>TROY4BLOSUBBREAKER1_ML</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOSUBBREAKER1_ML</cim:IdentifiedObject.aliasName>
+<cim:Measurement.measurementType>SwitchPosition</cim:Measurement.measurementType>
+<cim:Discrete.normalValue>0</cim:Discrete.normalValue>
+<cim:Measurement.PowerSystemResource rdf:resource="#_20184BF811274D589DAD1B6FDEBED27B"/>
+<cim:Measurement.unitSymbol rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitSymbol.none"/>
+<cim:Measurement.unitMultiplier rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#UnitMultiplier.none"/>
+</cim:Discrete>
+<cim:DiscreteValue rdf:ID="_20B1F89AA744490B9998FB7C36018E7C">
+<cim:IdentifiedObject.name>JUNEBLOO  220  BR2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOO220BR2</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_1EB02277EB09439EB5053F39779B8142"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_A29AB699BE774FDB982F0A3138D0C0B3">
+<cim:IdentifiedObject.name>MARCLANS  400  BR1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANS400BR1</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_D72F60CB75C74E1A9EC89F9F11D04AA6"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_BD5A27167649444D854A61609B372BC6">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  BREAKER 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOSUBBREAKER 1</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_A526AA14589D46859D5587AA6223003B"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_917C818A10AB400C8CCE3A1C2B84CE8C">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  BREAKER 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOSUBBREAKER 2</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_B9F1C725CEB7499C8CB7695E68E793BC"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_AD548F01A554423582FC613C76736615">
+<cim:IdentifiedObject.name>MARCLANS  400  BR2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANS400BR2</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_5E7E07AE6D4449B5AA6E554591200DB4"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_BEE0EC47D3BA4D0CAB92076F8E55EA2E">
+<cim:IdentifiedObject.name>JUNEBLOO  220  BR1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOO220BR1</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_042412844B9945038DAA74CCB178E48F"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_090D4AA6DDB6474EB6B2C761E58AB2AC">
+<cim:IdentifiedObject.name>TROY2BLO  220  BREAKER 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO220BR1</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_824913794A464AC981BC22B84738262B"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_88AA9A94B6D141AB9E281E4733A2E278">
+<cim:IdentifiedObject.name>AMHEGRAN  400  BREAKER 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRAN400BR1</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_224941E1491B4D3ABB9A99438E727B5B"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_4908DF4003AD46E8B75B67D5A17AD752">
+<cim:IdentifiedObject.name>TROY2BLO  220  BR2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO220BR2</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_AFD373D8623849208DCE99CF7476BFF8"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:DiscreteValue rdf:ID="_BA30D72786AB479688734545067B13A0">
+<cim:IdentifiedObject.name>AMHEGRAN  400  BREAKER 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRAN400BR2</cim:IdentifiedObject.aliasName>
+<cim:DiscreteValue.Discrete rdf:resource="#_E10658CC69F742CA8BE58E7E679D4B89"/>
+<cim:MeasurementValue.MeasurementValueSource rdf:resource="#_2E2F919114E64EFD8C6AF3FE7242C757"/>
+</cim:DiscreteValue>
+<cim:GeographicalRegion rdf:ID="_25F1F1F909A44293A66DB8A9785F6D2E">
+<cim:IdentifiedObject.name>ABB40bus</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>ABB40</cim:IdentifiedObject.aliasName>
+</cim:GeographicalRegion>
+<cim:HydroGeneratingUnit rdf:ID="_A56C7B8E096B47AF91B8D7C9E304E32A">
+<cim:GeneratingUnit.genControlSource rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#GeneratorControlSource.plantControl"/>
+<cim:GeneratingUnit.initialP>1000</cim:GeneratingUnit.initialP>
+<cim:GeneratingUnit.nominalP>1000</cim:GeneratingUnit.nominalP>
+<cim:GeneratingUnit.maxOperatingP>9999</cim:GeneratingUnit.maxOperatingP>
+<cim:GeneratingUnit.minOperatingP>-9999</cim:GeneratingUnit.minOperatingP>
+<cim:IdentifiedObject.name>AMHEGRANPOUHYDRO</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRANPOUHYDRO</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_E0EDEFB17D3C4DBE80F8A31158AF6187"/>
+</cim:HydroGeneratingUnit>
+<cim:HydroGeneratingUnit rdf:ID="_75E51EFC5E4D4199B5A9B2FB567FCE7F">
+<cim:GeneratingUnit.genControlSource rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#GeneratorControlSource.plantControl"/>
+<cim:GeneratingUnit.initialP>1000</cim:GeneratingUnit.initialP>
+<cim:GeneratingUnit.nominalP>1000</cim:GeneratingUnit.nominalP>
+<cim:GeneratingUnit.maxOperatingP>9999</cim:GeneratingUnit.maxOperatingP>
+<cim:GeneratingUnit.minOperatingP>-9999</cim:GeneratingUnit.minOperatingP>
+<cim:IdentifiedObject.name>TROY2BLOPOUHYDRO</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLOPOUHYDRO</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_C11BD7B3383C4616A41913CF113916BC"/>
+</cim:HydroGeneratingUnit>
+<cim:HydroGeneratingUnit rdf:ID="_7B8888E4DB1942C98AFC98DF7BDA0054">
+<cim:GeneratingUnit.genControlSource rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#GeneratorControlSource.plantControl"/>
+<cim:GeneratingUnit.initialP>1000</cim:GeneratingUnit.initialP>
+<cim:GeneratingUnit.nominalP>1000</cim:GeneratingUnit.nominalP>
+<cim:GeneratingUnit.maxOperatingP>9999</cim:GeneratingUnit.maxOperatingP>
+<cim:GeneratingUnit.minOperatingP>-9999</cim:GeneratingUnit.minOperatingP>
+<cim:IdentifiedObject.name>JUNEBLOOPOUHYDRO</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOOPOUHYDRO</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_205469BDF1F44BF5A1DD210AAC2CFCF4"/>
+</cim:HydroGeneratingUnit>
+<cim:HydroGeneratingUnit rdf:ID="_00ABD1FB949E4C01BB7BE4505FDE8B33">
+<cim:GeneratingUnit.genControlSource rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#GeneratorControlSource.plantControl"/>
+<cim:GeneratingUnit.initialP>1000</cim:GeneratingUnit.initialP>
+<cim:GeneratingUnit.nominalP>1000</cim:GeneratingUnit.nominalP>
+<cim:GeneratingUnit.maxOperatingP>9999</cim:GeneratingUnit.maxOperatingP>
+<cim:GeneratingUnit.minOperatingP>-9999</cim:GeneratingUnit.minOperatingP>
+<cim:IdentifiedObject.name>MARCLANSPOUHYDRO</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANSPOUHYDRO</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_183CFED2D99445C0A6A52EE1B4299362"/>
+</cim:HydroGeneratingUnit>
+<cim:HydroGeneratingUnit rdf:ID="_B3A937BF2E874B5EB7CBD41C02956A1D">
+<cim:GeneratingUnit.genControlSource rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#GeneratorControlSource.plantControl"/>
+<cim:GeneratingUnit.initialP>1000</cim:GeneratingUnit.initialP>
+<cim:GeneratingUnit.nominalP>1000</cim:GeneratingUnit.nominalP>
+<cim:GeneratingUnit.maxOperatingP>9999</cim:GeneratingUnit.maxOperatingP>
+<cim:GeneratingUnit.minOperatingP>-9999</cim:GeneratingUnit.minOperatingP>
+<cim:IdentifiedObject.name>TROY4BLOPOUHYDRO</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOPOUHYDRO</cim:IdentifiedObject.aliasName>
+<cim:Equipment.EquipmentContainer rdf:resource="#_6D6A626A777B466B952E9665377FF379"/>
+</cim:HydroGeneratingUnit>
+<cim:Line rdf:ID="_E0EDEFB17D3C4DBE80F8A31158AF6187">
+<cim:IdentifiedObject.name>AMHEGRANXNODE</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRANXNODE</cim:IdentifiedObject.aliasName>
+<cim:Line.Region rdf:resource="#_D4D32BE854FB4D3E9C58CB20CBE7D73F"/>
+</cim:Line>
+<cim:Line rdf:ID="_C11BD7B3383C4616A41913CF113916BC">
+<cim:IdentifiedObject.name>TROY2BLO</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO</cim:IdentifiedObject.aliasName>
+<cim:Line.Region rdf:resource="#_D4D32BE854FB4D3E9C58CB20CBE7D73F"/>
+</cim:Line>
+<cim:Line rdf:ID="_6D6A626A777B466B952E9665377FF379">
+<cim:IdentifiedObject.name>TROY4BLO</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLO</cim:IdentifiedObject.aliasName>
+<cim:Line.Region rdf:resource="#_D4D32BE854FB4D3E9C58CB20CBE7D73F"/>
+</cim:Line>
+<cim:Line rdf:ID="_205469BDF1F44BF5A1DD210AAC2CFCF4">
+<cim:IdentifiedObject.name>JUNEBLOOXNODE</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOOXNODE</cim:IdentifiedObject.aliasName>
+<cim:Line.Region rdf:resource="#_D4D32BE854FB4D3E9C58CB20CBE7D73F"/>
+</cim:Line>
+<cim:Line rdf:ID="_183CFED2D99445C0A6A52EE1B4299362">
+<cim:IdentifiedObject.name>MARCLANSXNODE</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANSXNODE</cim:IdentifiedObject.aliasName>
+<cim:Line.Region rdf:resource="#_D4D32BE854FB4D3E9C58CB20CBE7D73F"/>
+</cim:Line>
+<cim:MeasurementValueSource rdf:ID="_2E2F919114E64EFD8C6AF3FE7242C757">
+<cim:IdentifiedObject.name>SCADA</cim:IdentifiedObject.name>
+</cim:MeasurementValueSource>
+<cim:MeasurementValueSource rdf:ID="_4F4BD3E5088440BBA835596867424256">
+<cim:IdentifiedObject.name>Operator</cim:IdentifiedObject.name>
+</cim:MeasurementValueSource>
+<cim:MeasurementValueSource rdf:ID="_4F86DA12CD04422191D52E9E041ED9BC">
+<cim:IdentifiedObject.name>Estimated</cim:IdentifiedObject.name>
+</cim:MeasurementValueSource>
+<cim:MeasurementValueSource rdf:ID="_624665E4F2DE4A8DA24ECECEF0BC7DE2">
+<cim:IdentifiedObject.name>PowerFlow</cim:IdentifiedObject.name>
+</cim:MeasurementValueSource>
+<cim:MeasurementValueSource rdf:ID="_D64EED6CB3AA4CFDA5EDA86FD421139B">
+<cim:IdentifiedObject.name>Calculated</cim:IdentifiedObject.name>
+</cim:MeasurementValueSource>
+<cim:MeasurementValueSource rdf:ID="_D9749C6E3C5E41CB8F69BF891724FA52">
+<cim:IdentifiedObject.name>ICCP</cim:IdentifiedObject.name>
+</cim:MeasurementValueSource>
+<cim:OperationalLimitType rdf:ID="_97533216">
+<cim:IdentifiedObject.name>AD Converter High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533215">
+<cim:IdentifiedObject.name>AD Converter High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533214">
+<cim:IdentifiedObject.name>AD Converter High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533213">
+<cim:IdentifiedObject.name>AD Converter High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533212">
+<cim:IdentifiedObject.name>AD Converter High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533210">
+<cim:IdentifiedObject.name>AD Converter Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533209">
+<cim:IdentifiedObject.name>AD Converter Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533208">
+<cim:IdentifiedObject.name>AD Converter Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533207">
+<cim:IdentifiedObject.name>AD Converter Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_97533206">
+<cim:IdentifiedObject.name>AD Converter Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412015">
+<cim:IdentifiedObject.name>System points High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412014">
+<cim:IdentifiedObject.name>System points High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412013">
+<cim:IdentifiedObject.name>System points High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412012">
+<cim:IdentifiedObject.name>System points High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412011">
+<cim:IdentifiedObject.name>System points High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412009">
+<cim:IdentifiedObject.name>System points Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412008">
+<cim:IdentifiedObject.name>System points Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412007">
+<cim:IdentifiedObject.name>System points Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412006">
+<cim:IdentifiedObject.name>System points Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_412005">
+<cim:IdentifiedObject.name>System points Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411015">
+<cim:IdentifiedObject.name>Spare High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411014">
+<cim:IdentifiedObject.name>Spare High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411013">
+<cim:IdentifiedObject.name>Spare High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411012">
+<cim:IdentifiedObject.name>Spare High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411011">
+<cim:IdentifiedObject.name>Spare High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411009">
+<cim:IdentifiedObject.name>Spare Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411008">
+<cim:IdentifiedObject.name>Spare Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411007">
+<cim:IdentifiedObject.name>Spare Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411006">
+<cim:IdentifiedObject.name>Spare Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_411005">
+<cim:IdentifiedObject.name>Spare Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410015">
+<cim:IdentifiedObject.name>Misc Measured VA High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410014">
+<cim:IdentifiedObject.name>Misc Measured VA High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410013">
+<cim:IdentifiedObject.name>Misc Measured VA High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410012">
+<cim:IdentifiedObject.name>Misc Measured VA High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410011">
+<cim:IdentifiedObject.name>Misc Measured VA High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410009">
+<cim:IdentifiedObject.name>Misc Measured VA Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410008">
+<cim:IdentifiedObject.name>Misc Measured VA Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410007">
+<cim:IdentifiedObject.name>Misc Measured VA Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410006">
+<cim:IdentifiedObject.name>Misc Measured VA Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_410005">
+<cim:IdentifiedObject.name>Misc Measured VA Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409015">
+<cim:IdentifiedObject.name>Temperature High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409014">
+<cim:IdentifiedObject.name>Temperature High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409013">
+<cim:IdentifiedObject.name>Temperature High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409012">
+<cim:IdentifiedObject.name>Temperature High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409011">
+<cim:IdentifiedObject.name>Temperature High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409009">
+<cim:IdentifiedObject.name>Temperature Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409008">
+<cim:IdentifiedObject.name>Temperature Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409007">
+<cim:IdentifiedObject.name>Temperature Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409006">
+<cim:IdentifiedObject.name>Temperature Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_409005">
+<cim:IdentifiedObject.name>Temperature Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408015">
+<cim:IdentifiedObject.name>Frequency High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408014">
+<cim:IdentifiedObject.name>Frequency High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408013">
+<cim:IdentifiedObject.name>Frequency High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408012">
+<cim:IdentifiedObject.name>Frequency High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408011">
+<cim:IdentifiedObject.name>Frequency High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408009">
+<cim:IdentifiedObject.name>Frequency Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408008">
+<cim:IdentifiedObject.name>Frequency Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408007">
+<cim:IdentifiedObject.name>Frequency Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408006">
+<cim:IdentifiedObject.name>Frequency Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_408005">
+<cim:IdentifiedObject.name>Frequency Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407015">
+<cim:IdentifiedObject.name>Tap Position High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407014">
+<cim:IdentifiedObject.name>Tap Position High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407013">
+<cim:IdentifiedObject.name>Tap Position High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407012">
+<cim:IdentifiedObject.name>Tap Position High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407011">
+<cim:IdentifiedObject.name>Tap Position High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407009">
+<cim:IdentifiedObject.name>Tap Position Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407008">
+<cim:IdentifiedObject.name>Tap Position Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407007">
+<cim:IdentifiedObject.name>Tap Position Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407006">
+<cim:IdentifiedObject.name>Tap Position Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_407005">
+<cim:IdentifiedObject.name>Tap Position Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406015">
+<cim:IdentifiedObject.name>Current High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406014">
+<cim:IdentifiedObject.name>Current High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406013">
+<cim:IdentifiedObject.name>Current High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406012">
+<cim:IdentifiedObject.name>Current High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406011">
+<cim:IdentifiedObject.name>Current High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406009">
+<cim:IdentifiedObject.name>Current Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406008">
+<cim:IdentifiedObject.name>Current Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406007">
+<cim:IdentifiedObject.name>Current Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406006">
+<cim:IdentifiedObject.name>Current Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_406005">
+<cim:IdentifiedObject.name>Current Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405015">
+<cim:IdentifiedObject.name>Voltage High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405014">
+<cim:IdentifiedObject.name>Voltage High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405013">
+<cim:IdentifiedObject.name>Voltage High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405012">
+<cim:IdentifiedObject.name>Voltage High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405011">
+<cim:IdentifiedObject.name>Voltage High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405009">
+<cim:IdentifiedObject.name>Voltage Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405008">
+<cim:IdentifiedObject.name>Voltage Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405007">
+<cim:IdentifiedObject.name>Voltage Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405006">
+<cim:IdentifiedObject.name>Voltage Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_405005">
+<cim:IdentifiedObject.name>Voltage Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404015">
+<cim:IdentifiedObject.name>Reactive Transfo High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404014">
+<cim:IdentifiedObject.name>Reactive Transfo High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404013">
+<cim:IdentifiedObject.name>Reactive Transfo High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404012">
+<cim:IdentifiedObject.name>Reactive Transfo High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404011">
+<cim:IdentifiedObject.name>Reactive Transfo High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404009">
+<cim:IdentifiedObject.name>Reactive Transfo Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404008">
+<cim:IdentifiedObject.name>Reactive Transfo Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404007">
+<cim:IdentifiedObject.name>Reactive Transfo Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404006">
+<cim:IdentifiedObject.name>Reactive Transfo Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_404005">
+<cim:IdentifiedObject.name>Reactive Transfo Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403015">
+<cim:IdentifiedObject.name>Active Transform High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403014">
+<cim:IdentifiedObject.name>Active Transform High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403013">
+<cim:IdentifiedObject.name>Active Transform High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403012">
+<cim:IdentifiedObject.name>Active Transform High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403011">
+<cim:IdentifiedObject.name>Active Transform High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403009">
+<cim:IdentifiedObject.name>Active Transform Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403008">
+<cim:IdentifiedObject.name>Active Transform Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403007">
+<cim:IdentifiedObject.name>Active Transform Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403006">
+<cim:IdentifiedObject.name>Active Transform Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_403005">
+<cim:IdentifiedObject.name>Active Transform Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402015">
+<cim:IdentifiedObject.name>Reactive Line Po High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402014">
+<cim:IdentifiedObject.name>Reactive Line Po High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402013">
+<cim:IdentifiedObject.name>Reactive Line Po High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402012">
+<cim:IdentifiedObject.name>Reactive Line Po High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402011">
+<cim:IdentifiedObject.name>Reactive Line Po High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402009">
+<cim:IdentifiedObject.name>Reactive Line Po Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402008">
+<cim:IdentifiedObject.name>Reactive Line Po Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402007">
+<cim:IdentifiedObject.name>Reactive Line Po Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402006">
+<cim:IdentifiedObject.name>Reactive Line Po Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_402005">
+<cim:IdentifiedObject.name>Reactive Line Po Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401015">
+<cim:IdentifiedObject.name>Active Line Power High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401014">
+<cim:IdentifiedObject.name>Active Line Power High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401013">
+<cim:IdentifiedObject.name>Active Line Power High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401012">
+<cim:IdentifiedObject.name>Active Line Power High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401011">
+<cim:IdentifiedObject.name>Active Line Power High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401009">
+<cim:IdentifiedObject.name>Active Line Power Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401008">
+<cim:IdentifiedObject.name>Active Line Power Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401007">
+<cim:IdentifiedObject.name>Active Line Power Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401006">
+<cim:IdentifiedObject.name>Active Line Power Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_401005">
+<cim:IdentifiedObject.name>Active Line Power Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400015">
+<cim:IdentifiedObject.name>Default High5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400014">
+<cim:IdentifiedObject.name>Default High4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400013">
+<cim:IdentifiedObject.name>Default High3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400012">
+<cim:IdentifiedObject.name>Default High2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400011">
+<cim:IdentifiedObject.name>Default High1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.high"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400009">
+<cim:IdentifiedObject.name>Default Low1</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>600</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400008">
+<cim:IdentifiedObject.name>Default Low2</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>120</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400007">
+<cim:IdentifiedObject.name>Default Low3</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>60</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400006">
+<cim:IdentifiedObject.name>Default Low4</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>20</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_400005">
+<cim:IdentifiedObject.name>Default Low5</cim:IdentifiedObject.name>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#OperationalLimitDirectionKind.low"/>
+<cim:OperationalLimitType.acceptableDuration>0</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:Season rdf:ID="_3997F5435E2F42E6846D60BC5C47397D">
+<cim:Season.startDate>09-01</cim:Season.startDate>
+<cim:Season.endDate>11-30</cim:Season.endDate>
+<cim:Season.name rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SeasonName.fall"/>
+</cim:Season>
+<cim:Season rdf:ID="_95A4F810692D4265A9B2A588B5E1B690">
+<cim:Season.startDate>04-01</cim:Season.startDate>
+<cim:Season.endDate>05-31</cim:Season.endDate>
+<cim:Season.name rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SeasonName.spring"/>
+</cim:Season>
+<cim:Season rdf:ID="_9495FAAA1CFD4325AFF5DA84967A5B90">
+<cim:Season.startDate>06-01</cim:Season.startDate>
+<cim:Season.endDate>08-31</cim:Season.endDate>
+<cim:Season.name rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SeasonName.summer"/>
+</cim:Season>
+<cim:Season rdf:ID="_354695D33EF94F1FB43208F3477921D9">
+<cim:Season.startDate>12-01</cim:Season.startDate>
+<cim:Season.endDate>03-31</cim:Season.endDate>
+<cim:Season.name rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SeasonName.winter"/>
+</cim:Season>
+<cim:SubGeographicalRegion rdf:ID="_D4D32BE854FB4D3E9C58CB20CBE7D73F">
+<cim:IdentifiedObject.name>ABB40B</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>ABB40B</cim:IdentifiedObject.aliasName>
+<cim:SubGeographicalRegion.Region rdf:resource="#_25F1F1F909A44293A66DB8A9785F6D2E"/>
+</cim:SubGeographicalRegion>
+<cim:SynchronousMachine rdf:ID="_17509D34204041928FAF8837B51CD90F">
+<cim:SynchronousMachine.maxQ>9999</cim:SynchronousMachine.maxQ>
+<cim:SynchronousMachine.minQ>-9999</cim:SynchronousMachine.minQ>
+<cim:RotatingMachine.ratedS>1000</cim:RotatingMachine.ratedS>
+<cim:SynchronousMachine.r>0</cim:SynchronousMachine.r>
+<cim:SynchronousMachine.r0>0</cim:SynchronousMachine.r0>
+<cim:SynchronousMachine.r2>0</cim:SynchronousMachine.r2>
+<cim:SynchronousMachine.x>0</cim:SynchronousMachine.x>
+<cim:SynchronousMachine.x0>0</cim:SynchronousMachine.x0>
+<cim:SynchronousMachine.x2>0</cim:SynchronousMachine.x2>
+<cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+<cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+<cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+<cim:IdentifiedObject.name>AMHEGRAN  400  GENERATGenerator</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>AMHEGRAN400GEN1   GEN</cim:IdentifiedObject.aliasName>
+<cim:RotatingMachine.GeneratingUnit rdf:resource="#_A56C7B8E096B47AF91B8D7C9E304E32A"/>
+<cim:Equipment.EquipmentContainer rdf:resource="#_E0EDEFB17D3C4DBE80F8A31158AF6187"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:SynchronousMachine>
+<cim:SynchronousMachine rdf:ID="_BD38354A25824CEC85F12CF3F604CB34">
+<cim:SynchronousMachine.maxQ>9999</cim:SynchronousMachine.maxQ>
+<cim:SynchronousMachine.minQ>-9999</cim:SynchronousMachine.minQ>
+<cim:RotatingMachine.ratedS>1000</cim:RotatingMachine.ratedS>
+<cim:SynchronousMachine.r>0</cim:SynchronousMachine.r>
+<cim:SynchronousMachine.r0>0</cim:SynchronousMachine.r0>
+<cim:SynchronousMachine.r2>0</cim:SynchronousMachine.r2>
+<cim:SynchronousMachine.x>0</cim:SynchronousMachine.x>
+<cim:SynchronousMachine.x0>0</cim:SynchronousMachine.x0>
+<cim:SynchronousMachine.x2>0</cim:SynchronousMachine.x2>
+<cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+<cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+<cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+<cim:IdentifiedObject.name>MARCLANS  400  GENERATGenerator</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>MARCLANS400GEN 1  GEN</cim:IdentifiedObject.aliasName>
+<cim:RotatingMachine.GeneratingUnit rdf:resource="#_00ABD1FB949E4C01BB7BE4505FDE8B33"/>
+<cim:Equipment.EquipmentContainer rdf:resource="#_183CFED2D99445C0A6A52EE1B4299362"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:SynchronousMachine>
+<cim:SynchronousMachine rdf:ID="_1F42EF2F03B9430DA5DF674983A7CCE1">
+<cim:SynchronousMachine.maxQ>9999</cim:SynchronousMachine.maxQ>
+<cim:SynchronousMachine.minQ>-9999</cim:SynchronousMachine.minQ>
+<cim:RotatingMachine.ratedS>1000</cim:RotatingMachine.ratedS>
+<cim:SynchronousMachine.r>0</cim:SynchronousMachine.r>
+<cim:SynchronousMachine.r0>0</cim:SynchronousMachine.r0>
+<cim:SynchronousMachine.r2>0</cim:SynchronousMachine.r2>
+<cim:SynchronousMachine.x>0</cim:SynchronousMachine.x>
+<cim:SynchronousMachine.x0>0</cim:SynchronousMachine.x0>
+<cim:SynchronousMachine.x2>0</cim:SynchronousMachine.x2>
+<cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+<cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+<cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+<cim:IdentifiedObject.name>TROY4BLO  SUB  GEN1   Generator</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY4BLOSUBGEN1   GEN</cim:IdentifiedObject.aliasName>
+<cim:RotatingMachine.GeneratingUnit rdf:resource="#_B3A937BF2E874B5EB7CBD41C02956A1D"/>
+<cim:Equipment.EquipmentContainer rdf:resource="#_6D6A626A777B466B952E9665377FF379"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_F98723206D8843D19B511A5B40E2EC87"/>
+</cim:SynchronousMachine>
+<cim:SynchronousMachine rdf:ID="_AF812CBA77404E4695AFB99562E76A0A">
+<cim:SynchronousMachine.maxQ>9999</cim:SynchronousMachine.maxQ>
+<cim:SynchronousMachine.minQ>-9999</cim:SynchronousMachine.minQ>
+<cim:RotatingMachine.ratedS>1000</cim:RotatingMachine.ratedS>
+<cim:SynchronousMachine.r>0</cim:SynchronousMachine.r>
+<cim:SynchronousMachine.r0>0</cim:SynchronousMachine.r0>
+<cim:SynchronousMachine.r2>0</cim:SynchronousMachine.r2>
+<cim:SynchronousMachine.x>0</cim:SynchronousMachine.x>
+<cim:SynchronousMachine.x0>0</cim:SynchronousMachine.x0>
+<cim:SynchronousMachine.x2>0</cim:SynchronousMachine.x2>
+<cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+<cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+<cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+<cim:IdentifiedObject.name>JUNEBLOO  220  GENERATGenerator</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>JUNEBLOO220GEN1   GEN</cim:IdentifiedObject.aliasName>
+<cim:RotatingMachine.GeneratingUnit rdf:resource="#_7B8888E4DB1942C98AFC98DF7BDA0054"/>
+<cim:Equipment.EquipmentContainer rdf:resource="#_205469BDF1F44BF5A1DD210AAC2CFCF4"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_1AC9AF6924884191806C50238E0B0208"/>
+</cim:SynchronousMachine>
+<cim:SynchronousMachine rdf:ID="_DBBAB940C3974088B03D096BC96BA61C">
+<cim:SynchronousMachine.maxQ>9999</cim:SynchronousMachine.maxQ>
+<cim:SynchronousMachine.minQ>-9999</cim:SynchronousMachine.minQ>
+<cim:RotatingMachine.ratedS>1000</cim:RotatingMachine.ratedS>
+<cim:SynchronousMachine.r>0</cim:SynchronousMachine.r>
+<cim:SynchronousMachine.r0>0</cim:SynchronousMachine.r0>
+<cim:SynchronousMachine.r2>0</cim:SynchronousMachine.r2>
+<cim:SynchronousMachine.x>0</cim:SynchronousMachine.x>
+<cim:SynchronousMachine.x0>0</cim:SynchronousMachine.x0>
+<cim:SynchronousMachine.x2>0</cim:SynchronousMachine.x2>
+<cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+<cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+<cim:SynchronousMachine.referencePriority>0</cim:SynchronousMachine.referencePriority>
+<cim:IdentifiedObject.name>TROY2BLO  220  GEN1   Generator</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.aliasName>TROY2BLO220GEN1   GEN</cim:IdentifiedObject.aliasName>
+<cim:RotatingMachine.GeneratingUnit rdf:resource="#_75E51EFC5E4D4199B5A9B2FB567FCE7F"/>
+<cim:Equipment.EquipmentContainer rdf:resource="#_C11BD7B3383C4616A41913CF113916BC"/>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_1AC9AF6924884191806C50238E0B0208"/>
+</cim:SynchronousMachine>
+<cim:Terminal rdf:ID="_00ABAE4A9C5C4767AA22B5F956BC1A18">
+<cim:IdentifiedObject.name>MARCLANS  400  SWITCH 2_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_9C8169F94008454A99A2323626B38BC5"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_E58337C995564FBEBE936AA5183D457F"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_03ED6AA277784EE3A3D42878A6C6D17F">
+<cim:IdentifiedObject.name>JUNEBLOO  220  SWITCH 1_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_890D5F15255B4071B93CCC557F5BE14B"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_449305C79C224849ADFD7ACC06224FCE"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_0403D80E7A094B5689DFFCE75D011631">
+<cim:IdentifiedObject.name>JUNEBLOO  220  SWITCH 1_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_890D5F15255B4071B93CCC557F5BE14B"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_2D7891E532614B31AE4837517B8CDED4"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_05D45CEC8FF1457B8C4382A19D9503F1">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  SWITCH 2_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_753780892ECA48E5B6488CC99625E6FE"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_52958727BB8442B99551396A12C2D4A4"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_13BD075B8FDF44F7A11A3D8F7EEB7DE0">
+<cim:IdentifiedObject.name>JUNEBLOO  220  BUS1   Bus seg._T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_E70CC456D75D4A7D9C52FA88474509AC"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_449305C79C224849ADFD7ACC06224FCE"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_23D5371267804E8E8CCB56544C5A4A40">
+<cim:IdentifiedObject.name>AMHEGRAN  400  BUS1   Bus seg._T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_FD3E263F65A0482AB2E071BB86AF2EFA"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_4AE61330DE86427DA77FBE7DC682B9D5"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_244A90D3E0494FF5A101A021CBAFFBC4">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  BUS1   Bus seg._T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_1D1E5C4E625248B9BFBAAA9C0BE29693"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_914D02D240C14E5EA4D3B9E96D7911AC"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_29B1F9764B52465EBB3988C8D9C669E5">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  GEN1   Generator_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_1F42EF2F03B9430DA5DF674983A7CCE1"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_A6881D185C7F47209BFEFE035CFE0E2E"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_2B169F0A88ED4E86B84C20B36AA933E2">
+<cim:IdentifiedObject.name>MARCLANS  400  GENERATGenerator_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_BD38354A25824CEC85F12CF3F604CB34"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_4B803A52E55147539795741752033819"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_422A7C705FAE42268906E46A5198ABF0">
+<cim:IdentifiedObject.name>TROY2BLO  220  SWITCH 1_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_8E23AA9201BF445B892BB2C93F42210E"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_174B980A1F5044F2BFAC90AA7D2E3494"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_4E4A54FF4C6341CEB6E635CC6DDEF83C">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  SWITCH 2_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_753780892ECA48E5B6488CC99625E6FE"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_914D02D240C14E5EA4D3B9E96D7911AC"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_643A7472F083438183E2B9BB8E29F900">
+<cim:IdentifiedObject.name>AMHEGRAN  400  SWITCH 1_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_464706600830479E93049158B6904651"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_6F0DBA6B7E954DB3BEB036BF1E50B128"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_68EA033D648D43528BEF4430F154ADAF">
+<cim:IdentifiedObject.name>AMHEGRAN  400  GENERATGenerator_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_17509D34204041928FAF8837B51CD90F"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_6F0DBA6B7E954DB3BEB036BF1E50B128"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_6DA6AB0956FA4D2BB1620ABAD71E5551">
+<cim:IdentifiedObject.name>AMHEGRAN  400  SWITCH 1_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_464706600830479E93049158B6904651"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_4AE61330DE86427DA77FBE7DC682B9D5"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_6FB310A755914849B599E6CC40F9278A">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  SWITCH 1_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_20184BF811274D589DAD1B6FDEBED27B"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_914D02D240C14E5EA4D3B9E96D7911AC"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_78EC8EA592A04720BD8D3783CA5ACF51">
+<cim:IdentifiedObject.name>TROY2BLO  220  SWITCH 2_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_ADAB11BD586444CAA9C6F74BC1BDA0E8"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_AB94E69FEDBC43ED8E9D06F1A50D0713"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_863CD65B0D824B3AB2E6AA130D95B1A3">
+<cim:IdentifiedObject.name>TROY2BLO  220  SWITCH 1_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_8E23AA9201BF445B892BB2C93F42210E"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_1A5AA3CDE10748EC84AF6ACAC0E02811"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_87F7ABCD3B784A40956EC4DA727DC36F">
+<cim:IdentifiedObject.name>AMHEGRAN  400  SITCH 2_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_04A87DB18F97431AA86B5A8D3AF3B9EB"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_4AE61330DE86427DA77FBE7DC682B9D5"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_885D0188F8AF4B2B823ACA1455708D36">
+<cim:IdentifiedObject.name>TROY2BLO  220  SWITCH 2_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_ADAB11BD586444CAA9C6F74BC1BDA0E8"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_1A5AA3CDE10748EC84AF6ACAC0E02811"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_8AE49C4F541D4D119BC0EA36AE934852">
+<cim:IdentifiedObject.name>AMHEGRAN  400  SITCH 2_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_04A87DB18F97431AA86B5A8D3AF3B9EB"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_E90D77379CB2420786494B4FA608F95D"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_997E73D8A8A54BF2819E7A52321709E7">
+<cim:IdentifiedObject.name>MARCLANS  400  BUS1   Bus seg._T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_B6F2C960E9BD42DC92359AD316E36F86"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_B6A670604AFC4CFF955D0A2CC981EE1C"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_A52422F8FCB1460FA44A58B9E0FF2715">
+<cim:IdentifiedObject.name>MARCLANS  400  SWITCH1_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_508526D1AC424D5B843FEE6303DDDE81"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_B6A670604AFC4CFF955D0A2CC981EE1C"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_B40AB4B8DA3A4D29891330766575B649">
+<cim:IdentifiedObject.name>TROY2BLO  220  GEN1   Generator_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_DBBAB940C3974088B03D096BC96BA61C"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_174B980A1F5044F2BFAC90AA7D2E3494"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_BE105B9C79A84AF89F48F384A882C622">
+<cim:IdentifiedObject.name>JUNEBLOO  220  GENERATGenerator_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_AF812CBA77404E4695AFB99562E76A0A"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_2D7891E532614B31AE4837517B8CDED4"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_C5CAFF8B4E014427BD26D507A02CF66B">
+<cim:IdentifiedObject.name>JUNEBLOO  220  SWITCH 2_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_E14CF50FDE004642BF45FB5B32DCAD76"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_449305C79C224849ADFD7ACC06224FCE"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_CC54D6E5B0D54692B81F9103FDC4EAA5">
+<cim:IdentifiedObject.name>MARCLANS  400  SWITCH 2_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_9C8169F94008454A99A2323626B38BC5"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_B6A670604AFC4CFF955D0A2CC981EE1C"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_D0197A859A8846168A5209AD33B9B417">
+<cim:IdentifiedObject.name>TROY4BLO  SUB  SWITCH 1_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_20184BF811274D589DAD1B6FDEBED27B"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_A6881D185C7F47209BFEFE035CFE0E2E"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_D04850D59B4E4635834F3B60D4C2A674">
+<cim:IdentifiedObject.name>TROY2BLO  220  BUS1   Bus seg._T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_9786EBA6A5D54BBB8A107B867E32898A"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_1A5AA3CDE10748EC84AF6ACAC0E02811"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_D9D27AF6F9254ABA9F05F9E2968FCC5F">
+<cim:IdentifiedObject.name>JUNEBLOO  220  SWITCH 2_T1</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_E14CF50FDE004642BF45FB5B32DCAD76"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_F4BEB2B2C22544F79154AEF128A3F67E"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_FD02193E1BB4477B82E164C0369EEAE6">
+<cim:IdentifiedObject.name>MARCLANS  400  SWITCH1_T2</cim:IdentifiedObject.name>
+<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+<cim:Terminal.ConductingEquipment rdf:resource="#_508526D1AC424D5B843FEE6303DDDE81"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_4B803A52E55147539795741752033819"/>
+</cim:Terminal>
+</rdf:RDF>

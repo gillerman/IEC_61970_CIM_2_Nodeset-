@@ -1,0 +1,2323 @@
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+            xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
+			      xsi:schemaLocation="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+	<NamespaceUris>
+    <Uri>http://gcs.com/IEC61970Types</Uri>
+  </NamespaceUris>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="SByte">i=2</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="Int16">i=4</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="Int64">i=8</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="Guid">i=14</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="XmlElement">i=16</Alias>
+    <Alias Alias="NodeId">i=17</Alias>
+    <Alias Alias="ExpandedNodeId">i=18</Alias>
+    <Alias Alias="StatusCode">i=19</Alias>
+    <Alias Alias="QualifiedName">i=20</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="Structure">i=22</Alias>
+    <Alias Alias="Number">i=26</Alias>
+    <Alias Alias="Integer">i=27</Alias>
+    <Alias Alias="UInteger">i=28</Alias>
+    <Alias Alias="HasChild">i=34</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasEventSource">i=36</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasNotifier">i=48</Alias>
+    <Alias Alias="FolderType">i=58</Alias>
+    <Alias Alias="ObjectFolder">i=85</Alias>
+    <Alias Alias="TypeFolder">i=86</Alias>
+    <Alias Alias="ObjectTypes">i=88</Alias>
+  </Aliases>
+  
+  <UAObjectType NodeId="ns=1;s=Base CIM Class" BrowseName="1:Base CIM Class">
+    <DisplayName>IEC 61970 BaseCIM Class</DisplayName>
+    <Description>IEC 61970 Base CIM Class</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=Base CIM Property" BrowseName="1:Base CIM Property" DataType="i=12">
+    <DisplayName>IEC 61970 BaseCIM Property</DisplayName>
+    <Description>IEC 61970 Base CIM Property</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">i=68</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariableType NodeId="ns=1;s=Base CIM Data Variable" BrowseName="1:Base CIM Data Variable"
+                      DataType="i=12"
+                      ValueRank="-2">
+    <DisplayName>IEC 61970 BaseCIM Data Variable</DisplayName>
+    <Description>IEC 61970 Base CIM Data Variable</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+    </References>
+  </UAVariableType>
+  <UAReferenceType NodeId="ns=1;s=Base CIM Reference" BrowseName="1:Base CIM Reference"
+                  IsAbstract="true"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 Base CIM Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">i=32</Reference>
+    </References>
+    <InverseName>IEC 61970 ReferencedBy</InverseName>
+  </UAReferenceType>
+
+  <!-- Identified Object -->
+  <UAObjectType NodeId="ns=1;s=IDO" BrowseName="1:IDO">
+    <DisplayName>IEC 61970 Identified Object Object Type</DisplayName>
+    <Description>IEC 61970 Identified Object Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Class</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=IDO.aliasName" BrowseName="1:IDO.aliasName" DataType="i=12">
+    <DisplayName>IEC 61970 IdentifiedObject.aliasName Property Type</DisplayName>
+    <Description>IEC 61970 IdentifiedObject.aliasName Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=IDO.aliasNameInstance" BrowseName="1:IDO.aliasNameInstance" DataType="i=12">
+  <DisplayName>IEC 61970 IdentifiedObject.aliasName Instance</DisplayName>
+  <Description>IEC 61970 IdentifiedObject.aliasName Instance</Description>
+  <References>
+    <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=IDO.aliasName</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=IDO</Reference>
+  </References>
+  </UAVariable>
+  
+  <!-- Season -->
+  <UAObjectType NodeId="ns=1;s=Se" BrowseName="1:Se">
+    <DisplayName>IEC 61970 Season Object Type</DisplayName>
+    <Description>IEC 61970 Season Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=Se.startDate" BrowseName="1:Se.startDate" DataType="i=12">
+    <DisplayName>IEC 61970 Season.startDate Property Type</DisplayName>
+    <Description>IEC 61970 Switch.startDate Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=Se.startDateInstance" BrowseName="1:Se.startDateInstance" DataType="i=12">
+    <DisplayName>IEC 61970 Season.startDate Instance</DisplayName>
+    <Description>IEC 61970 Switch.startDate Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=Se.startDate</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=Se</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=Se.endDate" BrowseName="1:Se.endDate" DataType="i=12">
+    <DisplayName>IEC 61970 Season.endDate Property Type</DisplayName>
+    <Description>IEC 61970 Switch.endDate Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=Se.endDateInstance" BrowseName="1:Se.endDateInstance" DataType="i=12">
+    <DisplayName>IEC 61970 Season.endDate Instance</DisplayName>
+    <Description>IEC 61970 Switch.endDate Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=Se.endDate</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=Se</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=Se.name" BrowseName="1:Se.name" DataType="i=12">
+    <DisplayName>IEC 61970 Season.name Property Type</DisplayName>
+    <Description>IEC 61970 Switch.name Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=Se.nameInstance" BrowseName="1:Se.nameInstance" DataType="i=12">
+    <DisplayName>IEC 61970 Season.name Instance</DisplayName>
+    <Description>IEC 61970 Switch.name Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=Se.name</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=Se</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=Ses" BrowseName="1:Ses">
+    <DisplayName>IEC 61970 Seasons</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Day Type -->
+  <UAObjectType NodeId="ns=1;s=DT" BrowseName="1:DT">
+    <DisplayName>IEC 61970 Day Type Object Type</DisplayName>
+    <Description>IEC 61970 Day Type Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=DTs" BrowseName="1:DTs">
+    <DisplayName>IEC 61970 Day Types</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+
+  <!-- Basic Interval Schedule-->
+  <UAObjectType NodeId="ns=1;s=BIS" BrowseName="1:BIS">
+    <DisplayName>IEC 61970 Basic Interval Schedule Object Type</DisplayName>
+    <Description>IEC 61970 Basic Interval Schedule Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=BIS.startTime" BrowseName="1:BIS.startTime" DataType="i=12">
+    <DisplayName>IEC 61970 BasicIntervalSchedule.startTime Property Type</DisplayName>
+    <Description>IEC 61970 BasicIntervalSchedule.startTime Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=BIS.startTimeInstance" BrowseName="1:BIS.startTimeInstance" DataType="i=12">
+    <DisplayName>IEC 61970 BasicIntervalSchedule.startTime Instance</DisplayName>
+    <Description>IEC 61970 BasicIntervalSchedule.startTime Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=BIS.startTime</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=BIS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=BIS.value1Unit" BrowseName="1:BIS.value1Unit" DataType="i=12">
+    <DisplayName>IEC 61970 BasicIntervalSchedule.value1Unit Property Type</DisplayName>
+    <Description>IEC 61970 BasicIntervalSchedule.value1Unit Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=BIS.value1UnitInstance" BrowseName="1:BIS.value1UnitInstance" DataType="i=12">
+    <DisplayName>IEC 61970 BasicIntervalSchedule.value1Unit Instance</DisplayName>
+    <Description>IEC 61970 BasicIntervalSchedule.value1Unit Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=BIS.value1Unit</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=BIS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=BIS.value2Unit" BrowseName="1:BIS.value2Unit" DataType="i=12">
+    <DisplayName>IEC 61970 BasicIntervalSchedule.value2Unit Property Type</DisplayName>
+    <Description>IEC 61970 BasicIntervalSchedule.value2Unit Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=BIS.value2UnitInstance" BrowseName="1:BIS.value2UnitInstance" DataType="i=12">
+    <DisplayName>IEC 61970 BasicIntervalSchedule.value2Unit Instance</DisplayName>
+    <Description>IEC 61970 BasicIntervalSchedule.value2Unit Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=BIS.value2Unit</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=BIS</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- Regular Interval Schedule-->
+  <UAObjectType NodeId="ns=1;s=RIS" BrowseName="1:RIS">
+    <DisplayName>IEC 61970 Regular Interval Schedule Object Type</DisplayName>
+    <Description>IEC 61970 Regular Interval Schedule Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=BIS</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=RIS.timeStep" BrowseName="R:BIS.timeStep" DataType="i=12">
+    <DisplayName>IEC 61970 RegularIntervalSchedule.timeStep Property Type</DisplayName>
+    <Description>IEC 61970 RegularIntervalSchedule.timeStep Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=BIS.timeStepInstance" BrowseName="1:BIS.timeStepInstance" DataType="i=12">
+    <DisplayName>IEC 61970 RegularIntervalSchedule.timeStep Instance</DisplayName>
+    <Description>IEC 61970 RegularIntervalSchedule.timeStep Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=RIS.timeStep</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=RIS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=RIS.endTime" BrowseName="1:RIS.endTime" DataType="i=12">
+    <DisplayName>IEC 61970 RegularIntervalSchedule.endTime Property Type</DisplayName>
+    <Description>IEC 61970 RegularIntervalSchedule.endTime Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=RIS.endTimeInstance" BrowseName="1:RIS.endTimeInstance" DataType="i=12">
+    <DisplayName>IEC 61970 RegularIntervalSchedule.endTime Instance</DisplayName>
+    <Description>IEC 61970 RegularIntervalSchedule.endTime Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=RIS.endTime</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=RIS</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- SeasonDayTypeSchedule-->
+  <UAObjectType NodeId="ns=1;s=SDTS" BrowseName="1:SDTS">
+    <DisplayName>IEC 61970 Season Day Type Schedule Object Type</DisplayName>
+    <Description>IEC 61970 Season Day Type Schedule Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=RIS</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=SDTS.DT" BrowseName="1:SDTS.DT" IsAbstract="false" Symmetric="false">
+    <DisplayName>IEC 61970 SeasonDayTypeSchedule.DayType Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>DayType.SeasonDayTypeSchedule</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;s=SDTS.Se" BrowseName="1:SDTS.Se" IsAbstract="false" Symmetric="false">
+    <DisplayName>IEC 61970 SeasonDayTypeSchedule.Season Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>Season.SeasonDayTypeSchedule</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=SDTSs" BrowseName="1:SDTSs">
+    <DisplayName>IEC 61970 Season Day Type Schedules</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Conform Load Schedule-->
+  <UAObjectType NodeId="ns=1;s=CLoS" BrowseName="1:CLoS">
+    <DisplayName>IEC 61970 Conform Load Schedule Object Type</DisplayName>
+    <Description>IEC 61970 Conform Load Schedule Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=RIS</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=CLoS.CLoG" BrowseName="1:CLoS.CLoG" IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 ConformLoadSchedule.ConformLoadGroup Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>ConformLoadGroup.ConformLoadSchedule</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=CLoSs" BrowseName="1:CLoSs">
+    <DisplayName>IEC 61970 Conform Load Schedules</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+
+  <!-- Non Conform Load Schedule-->
+  <UAObjectType NodeId="ns=1;s=NCLoS" BrowseName="1:NCLoS">
+    <DisplayName>IEC 61970 Non Conform Load Schedule Object Type</DisplayName>
+    <Description>IEC 61970 Non Conform Load Schedule Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=RIS</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=NCLoS.NCLoG" BrowseName="1:NCLoS.NCLoG" IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 NonConformLoadSchedule.NonConformLoadGroup Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>NonConformLoadGroup.NonConformLoadSchedule</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=NCLoSs" BrowseName="1:NCLoSs">
+    <DisplayName>IEC 61970 Non Conform Load Schedules</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Curve Data-->
+  <UAObjectType NodeId="ns=1;s=CDat" BrowseName="1:CDat">
+    <DisplayName>IEC 61970 Curve Data Object Type</DisplayName>
+    <Description>IEC 61970 Curve Data Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=CDat.xvalue" BrowseName="1:CDat.xvalue" DataType="i=12">
+    <DisplayName>IEC 61970 CurveData.xvalue Property Type</DisplayName>
+    <Description>IEC 61970 CurveData.xvalue Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=CDat.xvalueInstance" BrowseName="1:CDat.xvalueInstance" DataType="i=12">
+    <DisplayName>IEC 61970 CurveData.xvalue Instance</DisplayName>
+    <Description>IEC 61970 CurveData.xvalue Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=CDat.xvalue</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CDat</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=CDat.y1value" BrowseName="1:CDat.y1value" DataType="i=12">
+    <DisplayName>IEC 61970 CurveData.y1value Property Type</DisplayName>
+    <Description>IEC 61970 CurveData.y1value Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=CDat.y1valueInstance" BrowseName="1:CDat.y1valueInstance" DataType="i=12">
+    <DisplayName>IEC 61970 CurveData.y1value Instance</DisplayName>
+    <Description>IEC 61970 CurveData.y1value Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=CDat.y1value</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CDat</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=CDat.y2value" BrowseName="1:CDat.y2value" DataType="i=12">
+    <DisplayName>IEC 61970 CurveData.y2value Property Type</DisplayName>
+    <Description>IEC 61970 CurveData.y2value Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=CDat.y2valueInstance" BrowseName="1:CDat.y2valueInstance" DataType="i=12">
+    <DisplayName>IEC 61970 CurveData.y2value Instance</DisplayName>
+    <Description>IEC 61970 CurveData.y2value Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=CDat.y2value</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CDat</Reference>
+    </References>
+  </UAVariable>
+    <UAObject NodeId="ns=1;s=CDats" BrowseName="1:CDats">
+    <DisplayName>IEC 61970 Curve Data</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+  
+  <!--  Geographical Region -->
+  <UAObjectType NodeId="ns=1;s=GR" BrowseName="1:GR">
+    <DisplayName>IEC 61970 Geographical Region Object Type</DisplayName>
+    <Description>IEC 61970 Geographical Region Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=GRs" BrowseName="1:GRs">
+    <DisplayName>IEC 61970 Geographical Regions</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Sub Geographical Region -->
+  <UAObjectType NodeId="ns=1;s=SGR" BrowseName="1:SGR">
+    <DisplayName>IEC 61970 Sub Geographical Region Object Type</DisplayName>
+    <Description>IEC 61970 Sub Geographical Region Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=GR</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=SGR.Re"
+                  BrowseName="1:SGR.Re"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 SubGeographicalRegion.Region Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>Region.SubGeographicalRegion</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=SGRs" BrowseName="1:SGRs">
+    <DisplayName>IEC 61970 Sub Geographical Regions</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Load Area -->
+  <UAObjectType NodeId="ns=1;s=LA" BrowseName="1:LA">
+    <DisplayName>IEC 61970 Load Area Object Type</DisplayName>
+    <Description>IEC 61970 Load Area Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=SGR</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=LAs" BrowseName="1:LAs">
+    <DisplayName>IEC 61970 Load Areas</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- PSR -->
+  <UAObjectType NodeId="ns=1;s=PSR" BrowseName="1:PSR">
+    <DisplayName>IEC 61970 Power System Resource Object Type</DisplayName>
+    <Description>IEC 61970 Power System Resource Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+
+  <!-- TapChanger -->
+  <UAObjectType NodeId="ns=1;s=TC" BrowseName="1:TC">
+    <DisplayName>IEC 61970 Tap Changer Object Type</DisplayName>
+    <Description>IEC 61970 Tap Changer Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=PSR</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=TC.TCC"
+                BrowseName="1:TC.TCC"
+                IsAbstract="false"
+                Symmetric="false">
+    <DisplayName>IEC 61970 TapChanger.TapChangerControl Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>TapChangerControl.TapChanger</InverseName>
+  </UAReferenceType>
+  <UAVariableType NodeId="ns=1;s=TC.highStep" BrowseName="1:TC.highStep" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.highStep Property Type</DisplayName>
+    <Description>IEC 61970 TapChanger.highStep Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=TC.highStepInstance" BrowseName="1:TC.highStepInstance" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.highStep Instance</DisplayName>
+    <Description>IEC 61970 TapChanger.highStep Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=TC.highStep</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=TC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=TC.lowStep" BrowseName="1:TC.lowStep" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.lowStep Property Type</DisplayName>
+    <Description>IEC 61970 TapChanger.lowStep Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=TC.lowStepInstance" BrowseName="1:TC.lowStepInstance" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.lowStep Instance</DisplayName>
+    <Description>IEC 61970 TapChanger.lowStep Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=TC.lowStep</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=TC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=TC.ltcFlag" BrowseName="1:TC.ltcFlag" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.ltcFlag Property Type</DisplayName>
+    <Description>IEC 61970 TapChanger.ltcFlag Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=TC.ltcFlagInstance" BrowseName="1:TC.ltcFlagInstance" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.ltcFlag Instance</DisplayName>
+    <Description>IEC 61970 TapChanger.ltcFlag Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=TC.ltcFlag</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=TC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=TC.neutralStep" BrowseName="1:TC.neutralStep" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.neutralStep Property Type</DisplayName>
+    <Description>IEC 61970 TapChanger.neutralStep Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=TC.neutralStepInstance" BrowseName="1:TC.neutralStepInstance" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.neutralStep Instance</DisplayName>
+    <Description>IEC 61970 TapChanger.neutralStep Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=TC.neutralStep</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=TC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=TC.neutralU" BrowseName="1:TC.neutralU" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.neutralU Property Type</DisplayName>
+    <Description>IEC 61970 TapChanger.neutralU Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=TC.neutralUInstance" BrowseName="1:TC.neutralUInstance" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.neutralU Instance</DisplayName>
+    <Description>IEC 61970 TapChanger.neutralU Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=TC.neutralU</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=TC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=TC.normalStep" BrowseName="1:TC.normalStep" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.normalStep Property Type</DisplayName>
+    <Description>IEC 61970 TapChanger.normalStep Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=TC.normalStepInstance" BrowseName="1:TC.normalStepInstance" DataType="i=12">
+    <DisplayName>IEC 61970 TapChanger.normalStep Instance</DisplayName>
+    <Description>IEC 61970 TapChanger.normalStep Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=TC.normalStep</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=TC</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- PhaseTapChanger -->
+  <UAObjectType NodeId="ns=1;s=PTC" BrowseName="1:PTC">
+    <DisplayName>IEC 61970 Phase Tap Changer Object Type</DisplayName>
+    <Description>IEC 61970 Phase Tap Changer Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=TC</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=PTC.TE"
+                BrowseName="1:PTC.TE"
+                IsAbstract="false"
+                Symmetric="false">
+    <DisplayName>IEC 61970 PhaseTapChanger.TransformerEnd Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>TransformerEnd.PhaseTapChanger</InverseName>
+  </UAReferenceType>
+  <UAVariableType NodeId="ns=1;s=PTC.neutralPhase" BrowseName="1:PTC.neutralPhase" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChanger.neutralPhase Property Type</DisplayName>
+    <Description>IEC 61970 PhaseTapChanger.neutralPhase Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=PTC.neutralPhaseInstance" BrowseName="1:PTC.neutralPhaseInstance" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChanger.neutralPhase Instance</DisplayName>
+    <Description>IEC 61970 PhaseTapChanger.neutralPhase Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=PTC.neutralPhase</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=PTC</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=PTCs" BrowseName="1:PTCs">
+    <DisplayName>IEC 61970 Phase Tap Changers</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- PhaseTapChangerLinear -->
+  <UAObjectType NodeId="ns=1;s=PTCL" BrowseName="1:PTCL">
+    <DisplayName>IEC 61970 Phase Tap Changer Linear Object Type</DisplayName>
+    <Description>IEC 61970 Phase Tap Changer Linear Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=PTC</Reference>
+    </References>
+    </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=PTCL.stepPhaseShiftIncrement" BrowseName="1:PTCL.stepPhaseShiftIncrement" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChangerLinear.stepPhaseShiftIncrement Property Type</DisplayName>
+    <Description>IEC 61970 PhaseTapChangerLinear.stepPhaseShiftIncrement Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=PTCL.stepPhaseShiftIncrementInstance" BrowseName="1:PTCL.stepPhaseShiftIncrementInstance" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChangerLinear.stepPhaseShiftIncrement Instance</DisplayName>
+    <Description>IEC 61970 PhaseTapChangerLinear.stepPhaseShiftIncrement Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=PTCL.stepPhaseShiftIncrement</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=PTCL</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=PTCLs" BrowseName="1:PTCLs">
+    <DisplayName>IEC 61970 Phase Tap Changer Linears</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- PhaseTapChangerNonLinear -->
+  <UAObjectType NodeId="ns=1;s=PTCNL" BrowseName="1:PTCNL">
+    <DisplayName>IEC 61970 Phase Tap Changer Non Linear Object Type</DisplayName>
+    <Description>IEC 61970 Phase Tap Changer Non Linear Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=PTC</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=PTCNL.neutralPhase" BrowseName="1:PTCNL.neutralPhase" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChangerNonLinear.neutralPhase Property Type</DisplayName>
+    <Description>IEC 61970 PhaseTapChangerNonLinear.neutralPhase Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=PTCNL.neutralPhaseInstance" BrowseName="1:PTCNL.neutralPhaseInstance" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChangerNonLinear.neutralPhase Instance</DisplayName>
+    <Description>IEC 61970 PhaseTapChangerNonLinear.neutralPhase Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=PTCNL.neutralPhase</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=PTCNL</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=PTCNL.voltageStepIncrement" BrowseName="1:PTCNL.voltageStepIncrement" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChangerNonLinear.voltageStepIncrement Property Type</DisplayName>
+    <Description>IEC 61970 PhaseTapChangerNonLinear.voltageStepIncrement Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=PTCNL.voltageStepIncrementInstance" BrowseName="1:PTCNL.voltageStepIncrementInstance" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChangerNonLinear.voltageStepIncrement Instance</DisplayName>
+    <Description>IEC 61970 PhaseTapChangerNonLinear.voltageStepIncrement Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=PTCNL.voltageStepIncrement</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=PTCNL</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- PhaseTapChangerAsymmetrical -->
+  <UAObjectType NodeId="ns=1;s=PTCA" BrowseName="1:PTCA">
+    <DisplayName>IEC 61970 Phase Tap Changer Asymmetrical Object Type</DisplayName>
+    <Description>IEC 61970 Phase Tap Changer Asymmetrical Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=PTC</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=PTCA.windingConnectionAngle" BrowseName="1:PTCA.windingConnectionAngle" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChangerAsymmetrical.windingConnectionAngle Property Type</DisplayName>
+    <Description>IEC 61970 PhaseTapChangerAsymmetrical.windingConnectionAngle Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=PTCA.windingConnectionAngleInstance" BrowseName="1:PTCA.windingConnectionAngleInstance" DataType="i=12">
+    <DisplayName>IEC 61970 PhaseTapChangerAsymmetrical.windingConnectionAngle Instance</DisplayName>
+    <Description>IEC 61970 PhaseTapChangerAsymmetrical.windingConnectionAngle Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=PTCA.windingConnectionAngle</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=PTCA</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=PTCAs" BrowseName="1:PTCAs">
+    <DisplayName>IEC 61970 Phase Tap Changer Asymmetricals</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+  
+  <!-- Equipment Container -->
+  <UAObjectType NodeId="ns=1;s=EqC" BrowseName="1:EqC">
+    <DisplayName>IEC 61970 Equipment Container Object Type</DisplayName>
+    <Description>IEC 61970 Equipment Container Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=PSR</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=EqC.E"
+                  BrowseName="1:EqC.E"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 EquipmentContainer.Equipment Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>Equipment.EquipmentContainer</InverseName>
+  </UAReferenceType>
+
+  <!-- Base Voltage -->
+  <UAObjectType NodeId="ns=1;s=BV" BrowseName="1:BV">
+    <DisplayName>IEC 61970 Base Voltage Object Type</DisplayName>
+    <Description>IEC 61970 Base Voltage Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=EqC</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=BV.nominalVoltage" BrowseName="1:BV.nominalVoltage" DataType="i=12">
+    <DisplayName>IEC 61970 BaseVoltage.nominalVoltage Property Type</DisplayName>
+    <Description>IEC 61970BaseVoltage.nominalVoltage Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=BV.nominalVoltageInstance" BrowseName="1:BV.nominalVoltageInstance" DataType="i=12">
+    <DisplayName>IEC 61970 BaseVoltage.nominalVoltage Instance</DisplayName>
+    <Description>IEC 61970 BaseVoltage.nominalVoltage Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=BV.nominalVoltage</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=BV</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=BVs" BrowseName="1:BVs">
+    <DisplayName>IEC 61970 Base Voltages</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Line -->
+  <UAObjectType NodeId="ns=1;s=Li" BrowseName="1:Li">
+    <DisplayName>IEC 61970 Line Object Type</DisplayName>
+    <Description>IEC 61970 Line Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=CEq</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=Li.Re" BrowseName="1:Li.Re" IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 Line.Region Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>Region.Line</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=Lis" BrowseName="1:Lis">
+    <DisplayName>IEC 61970 Lines</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Mutual Coupling -->
+  <UAObjectType NodeId="ns=1;s=MC" BrowseName="1:MC">
+    <DisplayName>IEC 61970 Mutual Coupling Type</DisplayName>
+    <Description>IEC 61970 Mutual Coupling Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=MC.FT" BrowseName="1:MC.FT" IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 MutualCoupling.First_Terminal Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>First_Terminal.MutualCoupling</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;s=MC.ST" BrowseName="1:MC.ST" IsAbstract="false"
+                Symmetric="false">
+    <DisplayName>IEC 61970 MutualCoupling.SEnCd_Terminal Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>SEnCd_Terminal.MutualCoupling</InverseName>
+  </UAReferenceType>
+  <UAVariableType NodeId="ns=1;s=MC.distance11" BrowseName="1:MC.distance11" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.distance11 Property Type</DisplayName>
+    <Description>IEC 61970 MutualCoupling.distance11 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=MC.distance11Instance" BrowseName="1:MC.distance11Instance" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.distance11 Instance</DisplayName>
+    <Description>IEC 61970 MutualCoupling.distance11 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=MC.distance11</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=MC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=MC.distance12" BrowseName="1:MC.distance12" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.distance12 Property Type</DisplayName>
+    <Description>IEC 61970 MutualCoupling.distance12 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=MC.distance12Instance" BrowseName="1:MC.distance12Instance" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.distance12 Instance</DisplayName>
+    <Description>IEC 61970 MutualCoupling.distance12 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=MC.distance12</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=MC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=MC.distance21" BrowseName="1:MC.distance21" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.distance21 Property Type</DisplayName>
+    <Description>IEC 61970 MutualCoupling.distance21 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=MC.distance21Instance" BrowseName="1:MC.distance21Instance" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.distance21 Instance</DisplayName>
+    <Description>IEC 61970 MutualCoupling.distance21 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=MC.distance21</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=MC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=MC.distance22" BrowseName="1:MC.distance22" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.distance22 Property Type</DisplayName>
+    <Description>IEC 61970 MutualCoupling.distance22 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=MC.distance22Instance" BrowseName="1:MC.distance22Instance" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.distance22 Instance</DisplayName>
+    <Description>IEC 61970 MutualCoupling.distance22 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=MC.distance22</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=MC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=MC.b0ch" BrowseName="1:MC.b0ch" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.b0ch Property Type</DisplayName>
+    <Description>IEC 61970 MutualCoupling.b0ch Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=MC.b0chInstance" BrowseName="1:MC.b0chInstance" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.b0ch Instance</DisplayName>
+    <Description>IEC 61970 MutualCoupling.b0ch Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=MC.b0ch</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=MC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=MC.g0ch" BrowseName="1:MC.g0ch" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.g0ch Property Type</DisplayName>
+    <Description>IEC 61970 MutualCoupling.g0ch Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=MC.g0chInstance" BrowseName="1:MC.g0chInstance" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.g0ch Instance</DisplayName>
+    <Description>IEC 61970 MutualCoupling.g0ch Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=MC.g0ch</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=MC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=MC.r0" BrowseName="1:MC.r0" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.r0 Property Type</DisplayName>
+    <Description>IEC 61970 MutualCoupling.r0 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=1;s=MC.r0Instance" BrowseName="1:MC.r0Instance" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.r0 Instance</DisplayName>
+    <Description>IEC 61970 MutualCoupling.r0 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=MC.r0</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=MC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=MC.x0" BrowseName="1:MC.x0" DataType="i=12">
+    <DisplayName>IEC 61970 MutualCoupling.x0 Property Type</DisplayName>
+    <Description>IEC 61970 MutualCoupling.x0 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=MC.x0Instance" BrowseName="1:MC.x0Instance">
+    <DisplayName>IEC 61970 MutualCoupling.x0 Instance</DisplayName>
+    <Description>IEC 61970 MutualCoupling.x0 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=MC.x0</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=MC</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=MCs" BrowseName="1:MCs">
+    <DisplayName>IEC 61970 Mutual Couplings</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Equipment-->
+  <UAObjectType NodeId="ns=1;s=Eq" BrowseName="1:Eq">
+    <DisplayName>IEC 61970 Equipment Object Type</DisplayName>
+    <Description>IEC 61970 Equipment Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=PSR</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=Eq.EqC"
+                  BrowseName="1:Eq.EqC"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 Equipment.EquipmentContainer Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>EquipmentContainer.Equipment</InverseName>
+  </UAReferenceType>
+
+  <!-- Generating Unit -->
+  <UAObjectType NodeId="ns=1;s=GU" BrowseName="1:GU">
+    <DisplayName>IEC 61970 Generating Unit Object Type</DisplayName>
+    <Description>IEC 61970 Generating Unit Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Eq</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=GU.genControlSource" BrowseName="1:GU.genControlSource" DataType="i=12">
+    <DisplayName>IEC 61970 GeneratingUnit.genControlSource Property Type</DisplayName>
+    <Description>IEC 61970 GeneratingUnit.genControlSource Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=GU.genControlSourceInstance" BrowseName="1:GU.genControlSourceInstance">
+    <DisplayName>IEC 61970 GeneratingUnit.genControlSource Instance</DisplayName>
+    <Description>IEC 61970 GeneratingUnit.genControlSource Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=GU.genControlSource</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=GU</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=GU.initialP" BrowseName="1:GU.initialP" DataType="i=12">
+    <DisplayName>IEC 61970 GeneratingUnit.initialP Property Type</DisplayName>
+    <Description>IEC 61970 GeneratingUnit.initialP Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=GU.initialPInstance" BrowseName="1:GU.initialPInstance">
+    <DisplayName>IEC 61970 GeneratingUnit.initialP Instance</DisplayName>
+    <Description>IEC 61970 GeneratingUnit.initialP Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=GU.initialP</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=GU</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=GU.nominalP" BrowseName="1:GU.nominalP" DataType="i=12">
+    <DisplayName>IEC 61970 GeneratingUnit.nominalP Property Type</DisplayName>
+    <Description>IEC 61970 GeneratingUnit.nominalP Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=GU.nominalPInstance" BrowseName="1:GU.nominalPInstance">
+    <DisplayName>IEC 61970 GeneratingUnit.nominalP Instance</DisplayName>
+    <Description>IEC 61970 GeneratingUnit.nominalP Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=GU.nominalP</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=GU</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=GU.maxOperatingP" BrowseName="1:GU.maxOperatingP" DataType="i=12">
+    <DisplayName>IEC 61970 GeneratingUnit.maxOperatingP Property Type</DisplayName>
+    <Description>IEC 61970 GeneratingUnit.maxOperatingP Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=GU.maxOperatingPInstance" BrowseName="1:GU.maxOperatingPInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.GeneratingUnit.maxOperatingP Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.GeneratingUnit.maxOperatingP Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=GU.maxOperatingP</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=GU</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=GU.minOperatingP" BrowseName="1:GU.minOperatingP" DataType="i=12">
+    <DisplayName>IEC 61970 GeneratingUnit.minOperatingP Property Type</DisplayName>
+    <Description>IEC 61970 GeneratingUnit.minOperatingP Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=GU.minOperatingPInstance" BrowseName="1:GU.minOperatingPInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.GeneratingUnit.minOperatingP Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.GeneratingUnit.minOperatingP Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=GU.minOperatingP</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=GU</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- Hydro Generating Unit -->
+  <UAObjectType NodeId="ns=1;s=HGU" BrowseName="1:HGU">
+    <DisplayName>IEC 61970 Hydro Generating Unit Object Type</DisplayName>
+    <Description>IEC 61970 Hydro Generating Unit Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=GU</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=HGUs" BrowseName="1:HGUs">
+    <DisplayName>IEC 61970 Hydro Generating Units</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Conducting Equipment-->
+  <UAObjectType NodeId="ns=1;s=CEq" BrowseName="1:CEq">
+    <DisplayName>IEC 61970 Conducting Equipment Object Type</DisplayName>
+    <Description>IEC 61970 Conducting Equipment Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Eq</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=CEq.BV"
+                  BrowseName="1:CEq.BV"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 ConductingEquipment.BaseVoltage Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>BaseVoltage.ConductingEquipment</InverseName>
+  </UAReferenceType>
+  
+  <!-- Rotating Machine -->
+  <UAObjectType NodeId="ns=1;s=RM" BrowseName="1:RM">
+    <DisplayName>IEC 61970 Rotating Machine Object Type</DisplayName>
+    <Description>IEC 61970 Rotating Machine Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=CEq</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=RM.GU"
+                  BrowseName="1:RM.GU"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 RotatingMachine.GeneratingUnit Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>GeneratingUnit.RotatingMachine</InverseName>
+  </UAReferenceType>
+  <UAVariableType NodeId="ns=1;s=RM.ratedS" BrowseName="1:RM.ratedS" DataType="i=12">
+    <DisplayName>IEC 61970 RotatingMachine.ratedS Property Type</DisplayName>
+    <Description>IEC 61970 RotatingMachine.ratedS Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=RM.ratedSInstance" BrowseName="1:RM.ratedSInstance">
+    <DisplayName>IEC 61970 RotatingMachine.ratedS Instance</DisplayName>
+    <Description>IEC 61970 RotatingMachine.ratedS Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=RM.ratedS</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=RM</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- Synchronous Machine -->
+  <UAObjectType NodeId="ns=1;s=SM" BrowseName="1:SM">
+    <DisplayName>IEC 61970 Synchronous Machine Object Type</DisplayName>
+    <Description>IEC 61970 Synchronous Machine Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=RM</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=SM.maxQ" BrowseName="1:SM.maxQ" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.maxQ Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.maxQ Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.maxQInstance" BrowseName="1:SM.maxQInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.maxQ Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.maxQ Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.maxQ</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.minQ" BrowseName="1:SM.minQ" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.minQ Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.minQ Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.minQInstance" BrowseName="1:SM.minQInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.minQ Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.minQ Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.minQ</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.r" BrowseName="1:SM.r" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.r Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.r Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.rInstance" BrowseName="1:SM.rInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.r Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.r Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.r</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.r0" BrowseName="1:SM.r0" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.r0 Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.r0 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.r0Instance" BrowseName="1:SM.r0Instance">
+    <DisplayName>IEC 61970 SynchronousMachine.r0 Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.r0 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.r0</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.r2" BrowseName="1:SM.r2" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.r2 Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.r2 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.r2Instance" BrowseName="1:SM.r2Instance">
+    <DisplayName>IEC 61970 SynchronousMachine.r2 Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.r2 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.r2</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.x" BrowseName="1:SM.x" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.x Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.x Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.xInstance" BrowseName="1:SM.xInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.x Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.x Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.x</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.x0" BrowseName="1:SM.x0" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.x0 Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.x0 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.x0Instance" BrowseName="1:SM.x0Instance">
+    <DisplayName>IEC 61970 SynchronousMachine.x0 Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.x0 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.x0</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.x2" BrowseName="1:SM.x2" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.x2 Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.x2 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.x2Instance" BrowseName="1:SM.x2Instance">
+    <DisplayName>IEC 61970 SynchronousMachine.x2 Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.x2 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.x2</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.operatingMode" BrowseName="1:SM.operatingMode" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.operatingMode Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.operatingMode Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.operatingModeInstance" BrowseName="1:SM.operatingModeInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.operatingMode Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.operatingMode Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.operatingMode</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.type" BrowseName="1:SM.type" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.type Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.type Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.typeInstance" BrowseName="1:SM.typeInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.type Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.type Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.type</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=SM.referencePriority" BrowseName="1:SM.referencePriority" DataType="i=12">
+    <DisplayName>IEC 61970 SynchronousMachine.referencePriority Property Type</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.referencePriority Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=SM.referencePriorityInstance" BrowseName="1:SM.referencePriorityInstance">
+    <DisplayName>IEC 61970 SynchronousMachine.referencePriority Instance</DisplayName>
+    <Description>IEC 61970 SynchronousMachine.referencePriority Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=SM.referencePriority</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=SM</Reference>
+    </References>
+  </UAVariable>
+  <!--
+  <UAObject NodeId="ns=1;s=SMs" BrowseName="1:SMs">
+    <DisplayName>IEC 61970 Synchronous Machines</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+  -->
+
+  <!-- Conductor -->
+  <UAObjectType NodeId="ns=1;s=Co" BrowseName="1:Co">
+    <DisplayName>IEC 61970 Conductor Object Type</DisplayName>
+    <Description>IEC 61970 Conductor Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=CEq</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=Co.length" BrowseName="1:Co.length" DataType="i=12">
+    <DisplayName>IEC 61970 Conductor.length Property Type</DisplayName>
+    <Description>IEC 61970 Conductor.length Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=Co.lengthInstance" BrowseName="1:Co.lengthInstance">
+    <DisplayName>IEC 61970 Conductor.length Instance</DisplayName>
+    <Description>IEC 61970 Conductor.length Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=Co.length</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=Co</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- AC Line Segment -->
+  <UAObjectType NodeId="ns=1;s=LS" BrowseName="1:LS">
+    <DisplayName>IEC 61970 AC Line Segment Object Type</DisplayName>
+    <Description>IEC 61970 AC Line Segment Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Co</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=LS.gch" BrowseName="1:LS.gch" DataType="i=12">
+    <DisplayName>IEC 61970 ACLineSegment.gch Property Type</DisplayName>
+    <Description>IEC 61970 ACLineSegment.gch Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=LS.gchInstance" BrowseName="1:LS.gchInstance">
+    <DisplayName>IEC 61970 ACLineSegment.gch Instance</DisplayName>
+    <Description>IEC 61970 ACLineSegment.gch Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=LS.gch</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=LS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=LS.g0ch" BrowseName="1:LS.g0ch" DataType="i=12">
+    <DisplayName>IEC 61970 ACLineSegment.g0ch Property Type</DisplayName>
+    <Description>IEC 61970 ACLineSegment.g0ch Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=LS.g0chInstance" BrowseName="1:LS.g0chInstance">
+    <DisplayName>IEC 61970 ACLineSegment.g0ch Instance</DisplayName>
+    <Description>IEC 61970 ACLineSegment.g0ch Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=LS.g0ch</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=LS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=LS.bch" BrowseName="1:LS.bch" DataType="i=12">
+    <DisplayName>IEC 61970 ACLineSegment.bch Property Type</DisplayName>
+    <Description>IEC 61970 ACLineSegment.bch Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=LS.bchInstance" BrowseName="1:LS.bchInstance">
+    <DisplayName>IEC 61970 ACLineSegment.bch Instance</DisplayName>
+    <Description>IEC 61970 ACLineSegment.bch Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=LS.bch</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=LS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=LS.b0ch" BrowseName="1:LS.b0ch" DataType="i=12">
+    <DisplayName>IEC 61970 ACLineSegment.b0ch Property Type</DisplayName>
+    <Description>IEC 61970 ACLineSegment.b0ch Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=LS.b0chInstance" BrowseName="1:LS.b0chInstance">
+    <DisplayName>IEC 61970 ACLineSegment.b0ch Instance</DisplayName>
+    <Description>IEC 61970 ACLineSegment.b0ch Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=LS.b0ch</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=LS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=LS.r" BrowseName="1:LS.r" DataType="i=12">
+    <DisplayName>IEC 61970 ACLineSegment.r Property Type</DisplayName>
+    <Description>IEC 61970 ACLineSegment.r Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=LS.rInstance" BrowseName="1:LS.rInstance">
+    <DisplayName>IEC 61970 ACLineSegment.r Instance</DisplayName>
+    <Description>IEC 61970 ACLineSegment.r Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=LS.r</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=LS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=LS.r0" BrowseName="1:LS.r0" DataType="i=12">
+    <DisplayName>IEC 61970 ACLineSegment.r0 Property Type</DisplayName>
+    <Description>IEC 61970 ACLineSegment.r0 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=LS.r0Instance" BrowseName="1:LS.r0Instance">
+    <DisplayName>IEC 61970 ACLineSegment.r0 Instance</DisplayName>
+    <Description>IEC 61970 ACLineSegment.r0 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=LS.r0</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=LS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=LS.x" BrowseName="1:LS.x" DataType="i=12">
+    <DisplayName>IEC 61970 ACLineSegment.x Property Type</DisplayName>
+    <Description>IEC 61970 ACLineSegment.x Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=LS.xInstance" BrowseName="1:LS.xInstance">
+    <DisplayName>IEC 61970 ACLineSegment.x Instance</DisplayName>
+    <Description>IEC 61970 ACLineSegment.x Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=LS.x</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=LS</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=LS.x0" BrowseName="1:LS.x0" DataType="i=12">
+    <DisplayName>IEC 61970 ACLineSegment.x0 Property Type</DisplayName>
+    <Description>IEC 61970 ACLineSegment.x0 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=LS.x0Instance" BrowseName="1:LS.x0Instance">
+    <DisplayName>IEC 61970 ACLineSegment.x0 Instance</DisplayName>
+    <Description>IEC 61970 ACLineSegment.x0 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=LS.x0</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=LS</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=LSs" BrowseName="1:LSs">
+    <DisplayName>IEC 61970 AC Line Segments</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Busbar Section -->
+  <UAObjectType NodeId="ns=1;s=BBS" BrowseName="1:BBS">
+    <DisplayName>IEC 61970 BusbarSection Object Type</DisplayName>
+    <Description>IEC 61970 BusbarSection Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=CEq</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=BBSs" BrowseName="1:BBSs">
+    <DisplayName>IEC 61970 Busbar Sections</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Energy Consumer -->  
+  <UAObjectType NodeId="ns=1;s=EnC" BrowseName="1:EnC">
+    <DisplayName>IEC 61970 Energy Consumer Object Type</DisplayName>
+    <Description>IEC 61970 Energy Consumer Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=CEq</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=EnC.distance11" BrowseName="1:EnC.distance11" DataType="i=12">
+    <DisplayName>IEC 61970 EnergyConsumer.distance11 Property Type</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.distance11 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=EnC.distance11Instance" BrowseName="1:EnC.distance11Instance">
+    <DisplayName>IEC 61970 EnergyConsumer.distance11 Instance</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.distance11 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=EnC.distance11</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=EnC.distance12" BrowseName="1:EnC.distance12" DataType="i=12">
+    <DisplayName>IEC 61970 EnergyConsumer.distance12 Property Type</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.distance12 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=EnC.distance12Instance" BrowseName="1:EnC.distance12Instance">
+    <DisplayName>IEC 61970 EnergyConsumer.distance12 Instance</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.distance12 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=EnC.distance12</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=EnC.distance21" BrowseName="1:EnC.distance21" DataType="i=12">
+    <DisplayName>IEC 61970 EnergyConsumer.distance21 Property Type</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.distance21 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=EnC.distance21Instance" BrowseName="1:EnC.distance21Instance">
+    <DisplayName>IEC 61970 EnergyConsumer.distance21 Instance</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.distance21 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=EnC.distance21</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=EnC.distance22" BrowseName="1:EnC.distance22" DataType="i=12">
+    <DisplayName>IEC 61970 EnergyConsumer.distance22 Property Type</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.distance22 Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=EnC.distance22Instance" BrowseName="1:EnC.distance22Instance">
+    <DisplayName>IEC 61970 EnergyConsumer.distance22 Instance</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.distance22 Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=EnC.distance22</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=EnC.pfixed" BrowseName="1:EnC.pfixed" DataType="i=12">
+    <DisplayName>IEC 61970 EnergyConsumer.pfixed Property Type</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.pfixed Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=EnC.pfixedInstance" BrowseName="1:EnC.pfixedInstance">
+    <DisplayName>IEC 61970 EnergyConsumer.pfixed Instance</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.pfixed Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=EnC.pfixed</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=EnC.pfixedPct" BrowseName="1:EnC.pfixedPct" DataType="i=12">
+    <DisplayName>IEC 61970 EnergyConsumer.pfixedPct Property Type</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.pfixedPct Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=EnC.pfixedPctInstance" BrowseName="1:EnC.pfixedPctInstance">
+    <DisplayName>IEC 61970 EnergyConsumer.pfixedPct Instance</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.pfixedPct Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=EnC.pfixedPct</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=EnC.qfixed" BrowseName="1:EnC.qfixed" DataType="i=12">
+    <DisplayName>IEC 61970 EnergyConsumer.qfixed Property Type</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.qfixed Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=EnC.qfixedInstance" BrowseName="1:EnC.qfixedInstance">
+    <DisplayName>IEC 61970 EnergyConsumer.qfixed Instance</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.qfixed Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=EnC.qfixed</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=EnC.qfixedPct" BrowseName="1:EnC.qfixedPct" DataType="i=12">
+    <DisplayName>IEC 61970 EnergyConsumer.qfixedPct Property Type</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.qfixedPct Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=EnC.qfixedPctInstance" BrowseName="1:EnC.qfixedPctInstance">
+    <DisplayName>IEC 61970 EnergyConsumer.qfixedPct Instance</DisplayName>
+    <Description>IEC 61970 EnergyConsumer.qfixedPct Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=EnC.qfixedPct</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- Conform Load -->
+  <UAObjectType NodeId="ns=1;s=CLo" BrowseName="1:CLo">
+    <DisplayName>IEC 61970 Conform Load Object Type</DisplayName>
+    <Description>IEC 61970 Conform Load Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=CLo.LoG" BrowseName="1:CLo.LoG" IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 ConformLoad.LoadGroup Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>LoadGroup.ConformLoad</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=CLos" BrowseName="1:CLos">
+    <DisplayName>IEC 61970 Conforming Loads</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+  
+  <!-- Non Conforming Load -->
+  <UAObjectType NodeId="ns=1;s=NCLo" BrowseName="1:NCLo">
+    <DisplayName>IEC 61970 Non Conform Load Object Type</DisplayName>
+    <Description>IEC 61970 Non Conform Load Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=NCLo.LoG" BrowseName="1:NCLo.LoG" IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 NonConformLoad.LoadGroup Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>LoadGroup.NonConformLoad</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=NCLos" BrowseName="1:NCLos">
+    <DisplayName>IEC 61970 Non Conforming Loads</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Load Group-->
+  <UAObjectType NodeId="ns=1;s=LoG" BrowseName="1:LoG">
+    <DisplayName>IEC 61970 Load Group Object Type</DisplayName>
+    <Description>IEC 61970 Load Group Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=EnC</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=LoG.SloA" BrowseName="1:LoG.SloA" IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 LoadGroup.SubLoadArea Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>SubLoadArea.LoadGroup</InverseName>
+  </UAReferenceType>
+
+  <!-- Conform Load Group-->
+  <UAObjectType NodeId="ns=1;s=CLoG" BrowseName="1:CLoG">
+    <DisplayName>IEC 61970 Conform Load Group Object Type</DisplayName>
+    <Description>IEC 61970 Conform Load Group Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=LoG</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=CLoGs" BrowseName="1:CLoGs">
+    <DisplayName>IEC 61970 Conform Load Groups</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Non Conform Load Group-->
+  <UAObjectType NodeId="ns=1;s=NCLoG" BrowseName="1:NCLoG">
+    <DisplayName>IEC 61970 Non Conform Load Group Object Type</DisplayName>
+    <Description>IEC 61970 Non Conform Load Group Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=LoG</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=NCLoGs" BrowseName="1:NCLoGs">
+    <DisplayName>IEC 61970 Conform Load Groups</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Switch -->
+  <UAObjectType NodeId="ns=1;s=Sw" BrowseName="1:Sw">
+    <DisplayName>IEC 61970 Switch Object Type</DisplayName>
+    <Description>IEC 61970 Switch Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=CEq</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=Sw.ratedCurrent" BrowseName="1:Sw.ratedCurrent" DataType="i=12">
+    <DisplayName>IEC 61970 Switch.ratedCurrent Property Type</DisplayName>
+    <Description>IEC 61970 Switch.ratedCurrent Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=Sw.ratedCurrentInstance" BrowseName="1:Sw.ratedCurrentInstance">
+    <DisplayName>IEC 61970 Switch.ratedCurrent Instance</DisplayName>
+    <Description>IEC 61970 Switch.ratedCurrent Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=Sw.ratedCurrent</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=Sw</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=Sw.normallyOpen" BrowseName="1:Sw.normallyOpen" DataType="i=12">
+    <DisplayName>IEC 61970 Switch.normallyOpen Property Type</DisplayName>
+    <Description>IEC 61970 Switch.normallyOpen Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=Sw.normallyOpenInstance" BrowseName="1:Sw.normallyOpenInstance">
+    <DisplayName>IEC 61970 Switch.normallyOpen Instance</DisplayName>
+    <Description>IEC 61970 Switch.normallyOpen Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=Sw.normallyOpen</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=Sw</Reference>
+    </References>
+  </UAVariable>
+
+
+  <!-- Disconnector -->
+  <UAObjectType NodeId="ns=1;s=Dis" BrowseName="1:Dis">
+    <DisplayName>IEC 61970 Disconnector Object Type</DisplayName>
+    <Description>IEC 61970 Disconnector Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Sw</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=Diss" BrowseName="1:Diss">
+    <DisplayName>IEC 61970 Disconnectors</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Breaker -->
+  <UAObjectType NodeId="ns=1;s=Br" BrowseName="1:Br">
+    <DisplayName>IEC 61970 Breaker Object Type</DisplayName>
+    <Description>IEC 61970 Breaker Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Sw</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;s=Brs" BrowseName="1:Brs">
+    <DisplayName>IEC 61970 Breakers</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Connectivity Node -->
+  <UAObjectType NodeId="ns=1;s=CN" BrowseName="1:CN">
+    <DisplayName>IEC 61970 Connectivity Node Object Type</DisplayName>
+    <Description>IEC 61970 Connectivity Node Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=CN.CNC"
+                  BrowseName="1:CN.CNC"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 ConnectivityNode.ConnectivityNodEnCtainer Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>ConnectivityNodEnCtainer.ConnectivityNode</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=CNs" BrowseName="1:CNs">
+    <DisplayName>IEC 61970 Connectivity Nodes</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Terminal -->
+  <UAObjectType NodeId="ns=1;s=T" BrowseName="1:T">
+    <DisplayName>IEC 61970 Terminal Object Type</DisplayName>
+    <Description>IEC 61970 Terminal Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=T.CEq"
+                  BrowseName="1:T.CEq"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 Terminal.ConductingEquipment Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>ConductingEquipment.Terminal</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;s=T.CN"
+                  BrowseName="1:T.CN"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 Terminal.ConnectivityNode Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>ConnectivityNode.Terminal</InverseName>
+  </UAReferenceType>
+  <UAVariableType NodeId="ns=1;s=T.sN" BrowseName="1:T.sN" DataType="i=12">
+    <DisplayName>IEC 61970 Terminal.sequenceNumber Property Type</DisplayName>
+    <Description>IEC 61970 Terminal.sequenceNumber Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=T.sNInstance" BrowseName="1:T.sNInstance">
+    <DisplayName>IEC 61970 Terminal.sequenceNumber Instance</DisplayName>
+    <Description>IEC 61970 Terminal.sequenceNumber Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=T.sN</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=T</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=Ts" BrowseName="1:Ts">
+    <DisplayName>IEC 61970 Terminals</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Oprerational Limit -->
+  <UAObjectType NodeId="ns=1;s=OL" BrowseName="1:OL">
+    <DisplayName>IEC 61970 Operational Limit Object Type</DisplayName>
+    <Description>IEC 61970 Operational Limit Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=OL.OLT"
+                  BrowseName="1:OL.OLT"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 OperationalLimit.OperationalLimitType Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>OperationalLimitType.OperationalLimit</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;s=OL.OLS"
+                  BrowseName="1:OL.OLS"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 OperationalLimit.OperationalLimitSet Reference</DisplayName>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>OperationalLimitSet.OperationalLimit</InverseName>
+  </UAReferenceType>
+
+  <!-- Operational Limit Type -->
+  <UAObjectType NodeId="ns=1;s=OLT" BrowseName="1:OLT">
+    <DisplayName>IEC 61970 Operational Limit Type Object Type</DisplayName>
+    <Description>IEC 61970 Operational Limit Type Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=OLT.d" BrowseName="1:OLT.d" DataType="i=12">
+    <DisplayName>IEC 61970 OperationalLimitType.direction Property Type</DisplayName>
+    <Description>IEC OperationalLimitType.direction Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=OLT.dInstance" BrowseName="1:OLT.dInstance">
+    <DisplayName>IEC 61970 OperationalLimitType.direction Instance</DisplayName>
+    <Description>IEC 61970 OperationalLimitType.direction Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=OLT.d</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=OLT</Reference>
+    </References>
+  </UAVariable>  
+  <UAVariableType NodeId="ns=1;s=OLT.aD" BrowseName="1:OLT.aD" DataType="i=12">
+    <DisplayName>IEC 61970 OperationalLimitType.acceptableDuration Property Type</DisplayName>
+    <Description>IEC OperationalLimitType.acceptableDuration Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=OLT.aDInstance" BrowseName="1:OLT.aDInstance">
+    <DisplayName>IEC 61970 OperationalLimitType.acceptableDuration Instance</DisplayName>
+    <Description>IEC 61970 OperationalLimitType.acceptableDuration Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=OLT.aD</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=OLT</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=OLTs" BrowseName="1:OLTs">
+    <DisplayName>IEC 61970 Operational Limit Types</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Current Limit -->
+  <UAObjectType NodeId="ns=1;s=CL" BrowseName="1:CL">
+    <DisplayName>IEC 61970 Current Limit Object Type</DisplayName>
+    <Description>IEC 61970 Current Limit Object Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=OL</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=CL.v" BrowseName="1:CL.v" DataType="i=12">
+    <DisplayName>IEC 61970 Current.value Property Type</DisplayName>
+    <Description>IEC 61970 Current.value Property Type</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=CL.vInstance" BrowseName="1:CL.vInstance">
+    <DisplayName>IEC 61970 CurrentLimit.value Instance</DisplayName>
+    <Description>IEC 61970 CurrentLimit.value Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=CL.v</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CL</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=CLs" BrowseName="1:CLs">
+    <DisplayName>IEC 61970 Current Limits</DisplayName>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Active (Real) Power Limit -->
+  <UAObjectType NodeId="ns=1;s=RPL" BrowseName="1:RPL">
+    <DisplayName>IEC 61970 Active (Real) Power Limit Object Type</DisplayName>
+    <Description>IEC 61970 Active (Real) Power Limit Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=OL</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=RPL.OLT"
+                  BrowseName="1:RPL.OLT"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 ActivePowerLimit.OperationalLimitType Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>OperationalLimitType.ActivePowerLimit</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;s=RPL.OLS"
+                  BrowseName="1:RPL.OLS"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 ActivePowerLimit.OperationalLimitSet Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>OperationalLimitSet.ActivePowerLimit</InverseName>
+  </UAReferenceType>
+  <UAVariableType NodeId="ns=1;s=RPL.v" BrowseName="1:RPL.v" DataType="i=12">
+    <DisplayName>IEC 61970 ActivePowerLimit.value Property Type</DisplayName>
+    <Description>IEC 61970 ActivePowerLimit.value Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=RPL.vInstance" BrowseName="1:RPL.vInstance">
+    <DisplayName>IEC 61970 ActivePowerLimit.value Instance</DisplayName>
+    <Description>IEC 61970 ActivePowerLimit.value Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=RPL.v</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=RPL</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=RPLs" BrowseName="1:RPLs">
+    <DisplayName>IEC 61970 Active (Real) Power Limits</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Apparent Power Limit -->
+  <UAObjectType NodeId="ns=1;s=APL" BrowseName="1:APL">
+    <DisplayName>IEC 61970 Apparent Power Limit Object Type</DisplayName>
+    <Description>IEC 61970 Apparent Power Limit Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=APL.v" BrowseName="1:APL.v" DataType="i=12">
+    <DisplayName>IEC 61970 ApparentPowerLimit.value Property Type</DisplayName>
+    <Description>IEC 61970 ApparentPowerLimit.value Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=APL.vInstance" BrowseName="1:APL.vInstance">
+    <DisplayName>IEC 61970 ApparentPowerLimit.value Instance</DisplayName>
+    <Description>IEC 61970 ApparentPowerLimit.value Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=APL.v</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=APL</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=APLs" BrowseName="1:APLs">
+    <DisplayName>IEC 61970 Apparent Power Limits</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Measurements -->
+  <UAObjectType NodeId="ns=1;s=M" BrowseName="1:M">
+    <DisplayName>IEC 61970 Measurement Object Type</DisplayName>
+    <Description>IEC 61970 Measurement Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=M.PSR"
+                  BrowseName="1:M.PSR"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 Measurement.PowerSystemResource Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>PowerSystemResource.Measurement</InverseName>
+  </UAReferenceType>
+  <UAReferenceType NodeId="ns=1;s=M.T" BrowseName="1:M.T"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 Measurement.Terminal Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>Terminal.Measurement</InverseName>
+  </UAReferenceType>
+  <UAVariableType NodeId="ns=1;s=M.mT" BrowseName="1:M.mT" DataType="i=12">
+    <DisplayName>IEC 61970 Measurement.measurementType Property Type</DisplayName>
+    <Description>IEC 61970 Measurement.measurementType Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=M.mTInstance" BrowseName="1:M.mTInstance">
+    <DisplayName>IEC 61970 Measurement.measurementType Instance</DisplayName>
+    <Description>IEC 61970 Measurement.measurementType Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=M.mT</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=M</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=M.uS" BrowseName="1:M.uS" DataType="i=12">
+    <DisplayName>IEC 61970 Measurement.unitSymbol Property Type</DisplayName>
+    <Description>IEC 61970 Measurement.unitSymbol Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=M.uSInstance" BrowseName="1:M.uSInstance">
+    <DisplayName>IEC 61970 Measurement.unitSymbol Instance</DisplayName>
+    <Description>IEC 61970 Measurement.unitSymbol Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=M.uS</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=M</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=M.uM" BrowseName="1:M.uM" DataType="i=12">
+    <DisplayName>IEC 61970 Measurement.unitMultiplier Property Type</DisplayName>
+    <Description>IEC 61970 Measurement.unitMultiplier Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=M.uMInstance" BrowseName="1:M.uMInstance">
+    <DisplayName>IEC 61970 Measurement.unitMultiplier Instance</DisplayName>
+    <Description>IEC 61970 Measurement.unitMultiplier Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=M.uM</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=M</Reference>
+    </References>
+  </UAVariable>
+
+  <!-- Discrete Measurements -->
+  <UAObjectType NodeId="ns=1;s=D" BrowseName="1:D">
+    <DisplayName>IEC 61970 Discrete Object Type</DisplayName>
+    <Description>IEC 61970 Discrete Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=M</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=D.nV" BrowseName="1:D.nV" DataType="i=12">
+    <DisplayName>IEC 61970 Discrete.normalValue Property Type</DisplayName>
+    <Description>IEC 61970 Discrete.normalValue Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=D.nVInstance" BrowseName="1:D.nVInstance">
+    <DisplayName>IEC 61970 Discrete.normalValue Instance</DisplayName>
+    <Description>IEC 61970 Discrete.normalValue Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=D.nV</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=D</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=Ds" BrowseName="1:Ds">
+    <DisplayName>IEC 61970 Discretes</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Analog Measurements -->
+  <UAObjectType NodeId="ns=1;s=A" BrowseName="1:A">
+    <DisplayName>IEC 61970 Analog Object Type</DisplayName>
+    <Description>IEC 61970 Analog Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=M</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariableType NodeId="ns=1;s=A.maxV" BrowseName="1:A.maxV" DataType="i=12">
+    <DisplayName>IEC 61970 Analog.maxValue Property Type</DisplayName>
+    <Description>IEC 61970 Analog.maxValue Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=A.maxVInstance" BrowseName="1:A.maxVInstance">
+    <DisplayName>IEC 61970 Analog.maxValue Instance</DisplayName>
+    <Description>IEC 61970 Analog.maxValue Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=A.maxV</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=A</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=A.minV" BrowseName="1:A.minV" DataType="i=12">
+    <DisplayName>IEC 61970 Analog.minValue Property Type</DisplayName>
+    <Description>IEC 61970 Analog.minValue Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=A.minVInstance" BrowseName="1:A.minVInstance">
+    <DisplayName>IEC 61970 Analog.minValue Instance</DisplayName>
+    <Description>IEC 61970 Analog.minValue Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=A.minV</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=A</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=A.nV" BrowseName="1:A.NV" DataType="i=12">
+    <DisplayName>IEC 61970 Analog.normalValue Property Type</DisplayName>
+    <Description>IEC 61970 Analog.normalValue Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=A.nVInstance" BrowseName="1:A.nVInstance">
+    <DisplayName>IEC 61970 Analog.normalValue Instance</DisplayName>
+    <Description>IEC 61970 Analog.normalValue Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=A.nV</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=A</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=1;s=A.pFI" BrowseName="1:A.pFI" DataType="i=12">
+    <DisplayName>IEC 61970 Analog.positiveFlowIn Property Type</DisplayName>
+    <Description>IEC 61970 Analog.positiveFlowIn Property Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Property</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable DataType="String" NodeId="ns=1;s=A.pFIInstance" BrowseName="1:A.pFIInstance">
+    <DisplayName>IEC 61970 Analog.positiveFlowIn Instance</DisplayName>
+    <Description>IEC 61970 Analog.positiveFlowIn Instance</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition" IsForward="false">ns=1;s=A.pFI</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=A</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;s=As" BrowseName="1:As">
+    <DisplayName>IEC 61970 Analogs</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Measurements Value -->
+  <UAObjectType NodeId="ns=1;s=MV" BrowseName="1:MV">
+    <DisplayName>IEC 61970 Measurement Value Object Type</DisplayName>
+    <Description>IEC 61970 Measurement Value Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+
+  <!-- Discrete Measurement Values -->
+  <UAObjectType NodeId="ns=1;s=DV" BrowseName="1:DV">
+    <DisplayName>IEC 61970 Discrete Value Object Type</DisplayName>
+    <Description>IEC 61970 Discrete Value Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=MV</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=DV.D" BrowseName="1:DV.D"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 DiscreteValue.Discrete Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>Discrete.DiscreteValue</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=DVs" BrowseName="1:DVs">
+    <DisplayName>IEC 61970 Discrete Values</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Analog Measurement Values -->
+  <UAObjectType NodeId="ns=1;s=AV" BrowseName="1:AV">
+    <DisplayName>IEC 61970 Analog Value Object Type</DisplayName>
+    <Description>IEC 61970 Analog Value Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=MV</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=AV.A" BrowseName="1:AV.A"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 AnalogValue.Analog Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>Analog.AnalogValue</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=AVs" BrowseName="1:AVs">
+    <DisplayName>IEC 61970 Analog Values</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+
+  <!-- Measurement Value Source -->
+  <UAObjectType NodeId="ns=1;s=MVS" BrowseName="1:MVS">
+    <DisplayName>IEC 61970 Measurement Value Source Object Type</DisplayName>
+    <Description>IEC 61970 Measurement Value Source Object Type</Description>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=IDO</Reference>
+    </References>
+  </UAObjectType>
+  <UAReferenceType NodeId="ns=1;s=MV.MVS"
+                  BrowseName="1:MV.MVS"
+                  IsAbstract="false"
+                  Symmetric="false">
+    <DisplayName>IEC 61970 MeasurementValue.MeasurementValueSource Reference</DisplayName>
+    <References>
+        <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;s=Base CIM Reference</Reference>
+    </References>
+    <InverseName>MeasurementValueSource.MeasurementValue</InverseName>
+  </UAReferenceType>
+  <UAObject NodeId="ns=1;s=MVSs" BrowseName="1:MVSs">
+    <DisplayName>IEC 61970 Measurement Value Sources</DisplayName>
+    <References>
+        <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+        <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+  </UAObject>
+</UANodeSet>
